@@ -5,12 +5,10 @@
 |                                                                    Container                                                                    |                            Virtual Machine                             |
 | :---------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | Designed to run a single app that share a host kernel. <br><br>Minimal interaction through CLI.<br><br>Lightweight to run / delete (immutable). | Full OS system.<br><br>Can be interacted with through UI and modified. |
-
 ## Image
 Template for a container when first created. 
 Makes easier setup for working in teams.
 Containers are instances of an image.
-
 ## Tags 
 Those are mutable, essentially pointers. 
 E.g. Latest : could point to image id 1 or image id 2 depending on the preference.
@@ -19,7 +17,6 @@ E.g. Latest : could point to image id 1 or image id 2 depending on the preferenc
 ``docker rmi [image]:[name of the tag] : Removes images and also tags.
 
 ***NOTE***: by default latest will be used as the name of the tag if not specified.
-
 ## Layers
 There are **layers** created on top of a base image (with incremental changes). 
 Those are read-only (both layers and base image) and cached.
