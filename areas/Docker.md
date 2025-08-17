@@ -21,42 +21,94 @@ E.g. Latest : could point to image id 1 or image id 2 depending on the preferenc
 There are **layers** created on top of a base image (with incremental changes). 
 Those are read-only (both layers and base image) and cached.
 
-![[docker-layers.jpeg|470x262]]
+![[Docker-1.jpeg|470x262]]
 
-## Docker file 
-List of instructions used to generate an image.
+## Dockerfile 
+List of instructions (commands) used to generate an image.
 
-``Docker build [path]``  
-	path: defines docker **build context directory**; copies all in that directory > sub-directories > files (ignoring what is in docker ignore file), then packages it into a .TAR file and sends it to the docker daemon.
+Initial the IDE (e.g. Visual Studio, Rider, etc.) will generate a generic template for containerization with a various commands:
+
+![[Docker-2.jpeg|520x352]]
+
+**NOTE**: Take on mind that each command is a [[Docker#Layers|layer]].
+
+At the left, always will start with a keyword (there are not a lot of them):
+![[Docker-3.jpeg|121x277]]
+
+Normally it will always start with ``FROM`` which refers to the image used for the build (dotnet SDK in this case):
+![[Docker-4.jpeg]]
+
+This creates a temporary intermediate container from the image, then it will run this command within the container.
+![[Docker-5.jpeg|201x53]]
+
+``WORKDIR`` creates a new directory (if it doesn't exists) and changes to it as the current directory.
+![[Docker-6.jpeg]]
+
+``COPY`` command copies [[Docker#Docker core commands|docker build]] context from docker daemon into the intermediate container, in this case it takes the .csproj file into *DockerCourseApi* 
+(.csproj -> src/DockerCourseApi).
+
+``RUN`` executes a shell command, in this case *restore* from dotnet SDK. This will create a cached layer (meaning we won't need to run a restore until the .csproj file changes).
+	``dotnet restore`` installs the packages specified in .csproj.
+
+![[Docker-7.jpeg|152x49]]
+``COPY . .`` here we copy everything else from the [[Docker#Docker core commands|docker build]] context.
+
+![[Docker-8.jpeg|433x45]]
+``WORKDIR`` Changes directory again to src/DockerCourseApi.
+
+![[Docker-9.jpeg|700x58]]
+``RUN`` runs another command, to publish the application.
+
+![[Docker-10.jpeg|660x237]]
+Here we notice another ``FROM`` command, which means we have [[Docker#Multistage Dockerfiles|multiples stages]]. 
+``FROM``: creates another temporary intermediate container from that image.
+``WORKDIR``: creates *app* directory and moves to it.
+``EXPOSE``: this is more of documentation to tell which ports are exposed (does not define which ports are exposed).
+``COPY``:  Copies from the *build* stage specifically the */app/publish* which is the published directory.
+``ENTRYPOINT``: Basically executes the command, which runs when the container spins up.
+
+### Multistage Dockerfile
+
+Allows us to distribute actions being made on how we want to generate our image, each stage accomplishes a goal.
+
+E.g. build stage for building our image contents | publish to publish our application.
+
+## Docker core commands
+
+### ``Docker build [path] .``
+
+``path``: Defines docker **build context directory**; copies all in that directory > sub-directories > files (ignoring what is in docker ignore file), then packages it into a .TAR file and sends it to the docker daemon.
+
+``.``: Takes the current directory.
 
 ## Docker ignore 
 Similar to .gitignore
 
 # **Persistent Storage**
 
-![[docker-0.jpeg|700x359]]
+![[Docker-11.jpeg|700x359]]
 
 ## Bind mount
 Leverages the hosts' file system to persist data, granting the privileges of the host.
 
-![[docker-3.jpeg|556x292]]
+![[Docker-12.jpeg|556x292]]
 ## tmpfs
 Uses the host memory to allocate data, it differs from [[Docker#Bind mount |bind mounts]] and [[Docker#Volumes|volumes]] given that it's lifetime is the same as the container using it. 
 
 More performant for in-memory use cases.
 
-![[docker-4.jpeg|560x294]]
+![[Docker-13.jpeg|560x294]]
 
 ## Volumes 
 Directories managed by docker which allows to set a place to persist data. 
 
 E.g. When a database container is deleted all of its contents will be lost unless it was pointing to a volume.  If a new database container ( from the same image ) points to that volume it can leverage the data created by other dropped databases.
 
-![[docker-1.png|334x276]]
+![[Docker-14.jpeg|334x276]]
 
 Multiple containers ( from the same image ) could point to a single volume at the same time.
 
-![[docker-2.jpeg|344x285]]
+![[Docker-15.jpeg|344x285]]
 
 
 # Networking
@@ -91,7 +143,7 @@ Docker desktop adds DNS entries - ``host.docker.internal`` / ``gateway.docker.in
 
 ``docker scout`` – This command allow us to scan images and check for CVEs (Common Vulnerabilities and Exposures). Essentially contrast them against a database of known CVEs.
 
-![[CVEs.jpeg]]
+![[Docker-16.jpeg]]
 
 Docker has a couple of layers of security and getting to a container, though CVEs emphasizes the importance of keeping everything up-to-date.
 
@@ -117,7 +169,7 @@ This image summarizes the workflow to publish images into a container registry (
 
 Said image can get pulled either by an user or a hosting solution (such as AKS / EKS).
 
-![[container-registry.jpg|700x367]]
+![[Docker-17.jpeg|700x367]]
 
 
 
