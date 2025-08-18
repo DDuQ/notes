@@ -170,7 +170,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -180,22 +179,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "46217b6445eb6756",
+  "active": "2d62be8ae5151d29",
   "lastOpenFiles": [
-    "files/Deploying .NET apps to Azure-3.png",
-    "files/Deploying .NET apps to Azure-2.png",
-    "files/Deploying .NET apps to Azure-1.png",
-    "areas/Docker.md",
-    "files/Deploying .NET apps to Azure-1.png",
-    "files/Deploying .NET apps to Azure-1.jpeg",
     "areas/Deploying .NET apps to Azure.md",
-    "files/Deploying .NET apps to Azure.jpeg",
-    "files/Deploying .NET apps to Azure.png",
-    "files/9840533c95d85dfa25df451b1c950436_MD5.jpeg",
-    "files/Docker.jpeg",
+    "areas/Docker.md",
+    "files/Deploying .NET apps to Azure-9.jpeg",
+    "files/image.jpeg",
+    "files/Deploying .NET apps to Azure-6.jpeg",
+    "files/Deploying .NET apps to Azure-7.jpeg",
+    "files/Deploying .NET apps to Azure-8.jpeg",
+    "files/Deploying .NET apps to Azure-10.jpeg",
+    "files/Deploying .NET apps to Azure-19.jpeg",
+    "files/Deploying .NET apps to Azure-17.jpeg",
+    "files/Deploying .NET apps to Azure-16.jpeg",
+    "files/Deploying .NET apps to Azure-15.jpeg",
     "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md",
-    "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg",
-    "files/Pasted image 20250817221340.png",
     "limbo/Entity.md",
     "limbo/Styles config.md",
     "README.md"

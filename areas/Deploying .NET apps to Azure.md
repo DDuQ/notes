@@ -75,15 +75,56 @@ Allows to connect to different cloud providers.
 ## Variables  
 Essentially assigned typed values that will allow direct reference to static data which describes its purpose.
 
-![[Deploying .NET apps to Azure-7.jpeg|406x411]]
-
+```tf
+variable "env_id" {  
+    type = string  
+    description = "The environment id"  
+    default = "dev"  
+}  
+  
+variable "appname" {  
+    type = string  
+    description = "The name of the app"  
+    default = "capybarapetapp"  
+}  
+  
+variable "src_key" {  
+    type = string  
+    description = "The infrastructure source"  
+    default = "terraform"  
+}  
+variable "subscription_id" {  
+    type = string  
+    description = "The Azure subscription id"  
+    default = "[suscription_id]"  
+}  
+  
+variable "sql_pass" {  
+    type = string  
+    description = "The SQL Server password"  
+}
+```
 ## Setup
 Here we will build the required providers, that will then enable actions. 
 
 E.g. Azure resource manager as provider to create a resources groups within our account.
 
-![[Deploying .NET apps to Azure-8.jpeg|398x412]]
-
+```tf
+terraform {  
+  required_providers {  
+    azurerm = {  
+        source = "hashicorp/azurerm"  
+        version = "4.39.0"  
+    }  
+  }  
+}  
+  
+provider "azurerm" {  
+  features {}  
+  resource_provider_registrations = "none"  
+  subscription_id = var.subscription_id  
+}
+```
 
 On ``terraform > required_providers`` is specified the name of the provider as well as the ``source`` and ``version`` of said provider within Terraform's container registry.
 
@@ -91,7 +132,16 @@ Then on ``provider`` it specifies the ``features`` to be used as well as other c
 
 ## Azure Resource Group
 
-![[Deploying .NET apps to Azure-9.jpeg]]
+```tf
+resource "azurerm_resource_group" "capybarapetapprg" {  
+  location = "UK South"  
+  name = "capybarapetapp-rg"  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}
+```
 
 In this case we are using an specific resource from the provider ([azurerm/resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)).
 
@@ -99,27 +149,98 @@ This gets declared on the command ``resource`` followed by the name of the resou
 
 ## Azure Container Registry
 
-![[Deploying .NET apps to Azure-10.jpeg]]
+```tf
+resource "azurerm_container_registry" "acr" {  
+  location            = azurerm_resource_group.capybarapetapprg.location  
+  name                = "${var.appname}registry${var.env_id}"  
+  resource_group_name = azurerm_resource_group.capybarapetapprg.name  
+  sku                 =  "Standard"  
+  admin_enabled       = true  
+  public_network_access_enabled = true  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}
+```
 
 Here we basically follow the documentation from [azurerm/container_registry]([azurerm_container_registry | Resources | hashicorp/azurerm | Terraform | Terraform Registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_registry)), and re-use the same tags for resource group.
 
 ## Azure Log Analytics Workspace
 
-![[Deploying .NET apps to Azure-11.jpeg]]
+![[Deploying .NET apps to Azure-7.jpeg]]
 
 In order to be able to create [[Deploying .NET apps to Azure#Azure Container Apps|Azure Container Apps]] we'll need to start from its dependencies.
 
-![[Deploying .NET apps to Azure-12.jpeg]]
-Here we stick to the required fields in the documentation on [azurerm/log_analytics_workspace](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/log_analytics_workspace).
+```tf
+resource "azurerm_log_analytics_workspace" "law" {  
+  location            = azurerm_resource_group.capybarapetapprg.location  
+  name                = "${var.appname}-law-${var.env_id}"  
+  resource_group_name = azurerm_resource_group.capybarapetapprg.name  
+  sku                 = "PerGB2018"  
+  retention_in_days   = 30  
+  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}
+```
 
+Here we stick to the required fields in the documentation on [azurerm/log_analytics_workspace](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/log_analytics_workspace).
 ## Azure Container Workspace
- 
-![[Deploying .NET apps to Azure-13.jpeg]]
+
+```tf
+resource "azurerm_container_app_environment" "app_env" {  
+  location            = azurerm_resource_group.capybarapetapprg.location  
+  name                = "${var.appname}-appenv-${var.env_id}"  
+  resource_group_name = azurerm_resource_group.capybarapetapprg.name  
+  log_analytics_workspace_id = azurerm_log_analytics_workspace.law.id  
+  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+} 
+```
 
 Here we stick to the required fields in the documentation on [azurerm/container_app_environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app_environment) .
 ## Azure Container Apps
 
-![[Deploying .NET apps to Azure-14.jpeg|556x672]]
+```tf
+resource "azurerm_container_app" "app" {  
+  container_app_environment_id = azurerm_container_app_environment.app_env.id  
+  name                         = "${var.appname}-api-${var.env_id}"  
+  resource_group_name          = azurerm_resource_group.capybarapetapprg.name  
+  revision_mode                = "Multiple"  
+  template {  
+    min_replicas = 1  
+    max_replicas = 3  
+    container {  
+      cpu    = 0.25  
+      image  = "mcr.microsoft.com/k8se/quickstart:latest"  
+      memory = "0.5Gi"  
+      name   = "${var.appname}-${var.env_id}"  
+    }  
+  }  
+      
+  ingress {  
+    allow_insecure_connections = false  
+    external_enabled = true  
+    target_port = 8080  
+    traffic_weight {  
+      percentage = 100  
+      label = "primary"  
+      latest_revision = true  
+    }  
+  }  
+  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}
+```
 
 Here we stick to the required fields in the documentation on [azurerm/container_app](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_app).
 
@@ -146,14 +267,48 @@ Given that we are using Kubernetes image we need to set some rules on ``ingress`
 
 In order to create an Azure SQL database, first we require to have Azure SQL Server set.
 
-![[Deploying .NET apps to Azure-15.jpeg]]
+```tf
+resource "azurerm_mssql_server" "sql_server" {  
+  location            = azurerm_resource_group.capybarapetapprg.location  
+  name                = "${var.appname}-sqlserver-${var.env_id}"  
+  resource_group_name = azurerm_resource_group.capybarapetapprg.name  
+  version             = "12.0"  
+  administrator_login = "capyadmin"  
+  administrator_login_password = var.sql_pass  
+  
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}
+```
 
 Here we stick to the required fields in the documentation on [azurerm/mssql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_server).
 
 Take on mind that with ``administrator_login`` and ``administrator_login_password`` we configure manual login (similar to SA credentials). But we could also set it up with Entra ID (formerly Azure AD).
 
 Now we can create the database:
-![[Deploying .NET apps to Azure-16.jpeg]]
+
+```tf
+resource "azurerm_mssql_database" "db" {  
+  name      = "CapybaraPetApp"  
+  server_id = azurerm_mssql_server.sql_server.id  
+  collation = "SQL_Latin1_General_CP1_CI_AS"  
+  license_type = "LicenseIncluded"  
+  max_size_gb = 10  
+  sku_name = "S1"  
+  zone_redundant = false  
+  
+  lifecycle {  
+    prevent_destroy = false  
+  }  
+    
+  tags = {  
+    environment = var.env_id  
+    src = var.src_key  
+  }  
+}  
+```
 
 Here we stick to the required fields in the documentation on [azurerm/mssql_database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_database).
 
@@ -165,7 +320,15 @@ Some configs to take on mind:
 E.g. The resource group gets deleted, this config prevents to delete the data allocated (useful for production environments).
 
 And lastly we will setup firewall rule:
-![[Deploying .NET apps to Azure-17.jpeg]]
+
+```tf
+resource "azurerm_mssql_firewall_rule" "rule" {  
+  end_ip_address   = "0.0.0.0"  
+  name             = "all_azure"  
+  server_id        = azurerm_mssql_server.sql_server.id  
+  start_ip_address = "0.0.0.0"  
+}
+```
 
 Here we stick to the required fields in the documentation on [azurerm/mssql_firewall_rule](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_firewall_rule).
 
@@ -176,25 +339,24 @@ This resource configuration essentially will allow all azure resources to connec
 1. ``terraform init`` - Scans the setup and checks for ``required_providers`` to pull the image.
 2. ``terraform plan`` - Will compare against Azure (if the resource already exists) and then create a plan to materialize said resource.
 
-	![[Deploying .NET apps to Azure-18.jpeg|641x268]]
+	![[Deploying .NET apps to Azure-8.jpeg|641x268]]
 
 3. ``terraform apply`` - Executes the plan from point 2 (requires input to approve the plan).
 
-	![[Deploying .NET apps to Azure-19.jpeg|643x260]]
+	![[Deploying .NET apps to Azure-9.jpeg|641x259]]
    
 
 
 # CI/CD With GitHub Actions
 
-![[Deploying .NET apps to Azure-20.jpeg|693x138]]
+![[Deploying .NET apps to Azure-10.jpeg|693x138]]
 
-![[Deploying .NET apps to Azure.jpeg|0x0]]
+![[Deploying .NET apps to Azure-11.jpeg|0x0]]
 
 ## GitHub Actions 101
 
 ### Yaml
 This will be the type of file we'll using to configure our pipelines.
-
 ### Keywords
 #### ``name`` 
 Will define the name of the pipeline.
@@ -204,7 +366,7 @@ name: Build and Deploy API to Azure
 ```
 
 Can be seen displayed on GitHub like this:
-![[Deploying .NET apps to Azure-1.png]]
+![[Deploying .NET apps to Azure-4.png]]
 
 #### ``on`` 
 Determines that an action will trigger the workflow.
@@ -228,7 +390,7 @@ Determines the start of the workflow.
 Will define a name as identifier for the current job (can contain alphanumeric characters, including - and _ ).
 
 Can be seen displayed on GitHub:
-![[Deploying .NET apps to Azure-2.png]]
+![[Deploying .NET apps to Azure-5.png]]
 ##### ``runs-on``
 Defines the image used to run the step.
 ##### ``outputs``
