@@ -186,7 +186,106 @@ This resource configuration essentially will allow all azure resources to connec
 
 # CI/CD With GitHub Actions
 
-![[Deploying .NET apps to Azure-20.jpeg]]
+![[Deploying .NET apps to Azure-20.jpeg|693x138]]
 
-![[Deploying .NET apps to Azure-21.jpeg]]
+![[Deploying .NET apps to Azure.jpeg|0x0]]
 
+## GitHub Actions 101
+
+### Yaml
+This will be the type of file we'll using to configure our pipelines.
+
+### Keywords
+#### ``name`` 
+Will define the name of the pipeline.
+
+```yaml
+name: Build and Deploy API to Azure
+```
+
+Can be seen displayed on GitHub like this:
+![[Deploying .NET apps to Azure-1.png]]
+
+#### ``on`` 
+Determines that an action will trigger the workflow.
+##### ``push`` 
+Action.
+##### ``branches``
+Defines which branches will trigger the workflow, when the action happens.
+
+```yaml 
+on:  
+  push:  
+    branches:  
+      - main
+```
+
+**NOTE**: Be careful about YAML spacing, it could drive into unexpected issues.
+
+#### ``jobs``
+Determines the start of the workflow.
+##### ``Job_id``
+Will define a name as identifier for the current job (can contain alphanumeric characters, including - and _ ).
+
+Can be seen displayed on GitHub:
+![[Deploying .NET apps to Azure-2.png]]
+##### ``runs-on``
+Defines the image used to run the step.
+##### ``outputs``
+Defines variables in the current job which can be used by other jobs (that depends on this job).
+
+```yaml
+jobs:  
+  build-and-deploy:  
+    runs-on: ubuntu-latest  
+    outputs:   
+      short_sha: ${{ steps.vars.outputs.short_sha }}  
+```
+
+##### ``steps``
+Can run commands, run setup tasks, or run an action in your repository, a public repository, or an action published in a Docker registry.
+##### ``name``
+A name to display in GitHub for the step.
+##### ``id``
+A unique identifier for the step.
+##### ``uses``
+Leverages an existing workflow from GitHub.
+##### ``with``
+Specifies the arguments required for the workflow.
+
+```yaml
+steps:  
+  - name: Checkout repository  
+    id: github  
+    uses: actions/checkout@v3  
+   
+  - name: Setup WebApi .NET  
+    uses: actions/setup-dotnet@v2  
+    with:  
+      dotnet-version: '8.0.x'
+```
+
+##### ``env``
+Sets environment variables for steps to use in the virtual environment.
+##### ``run``
+Runs command-line programs using the operating system's shell.
+
+```yaml
+- name: Build and push Docker image to ACR  
+  env:  
+    ACR_REGISTRY: ${{ vars.ACR_SERVER }}  
+    IMAGE_TAG: ${{ steps.vars.outputs.short_sha }}  
+    APP_NAME: ${{ vars.APP_NAME }}  
+  run: |  
+    docker build -f CapybaraPetApp.Api/Dockerfile -t $ACR_REGISTRY/$APP_NAME:$IMAGE_TAG -t $ACR_REGISTRY/$APP_NAME:latest .  
+    docker push $ACR_REGISTRY/$APP_NAME --all-tags
+```
+
+##### ``needs``
+Identifies any jobs that must complete successfully before this job will run.
+
+```yaml
+deploy-container-to-ACS:  
+  runs-on: ubuntu-latest  
+  needs: build-and-deploy
+```

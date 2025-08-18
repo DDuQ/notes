@@ -16,7 +16,7 @@ E.g. Latest : could point to image id 1 or image id 2 depending on the preferenc
 ``docker tag [image]:[name of the tag we want to create] : Create tags.
 ``docker rmi [image]:[name of the tag] : Removes images and also tags.
 
-***NOTE***: by default latest will be used as the name of the tag if not specified.
+**NOTE**: by default latest will be used as the name of the tag if not specified.
 ## Layers
 There are **layers** created on top of a base image (with incremental changes). 
 Those are read-only (both layers and base image) and cached.
@@ -161,7 +161,6 @@ Docker has a couple of layers of security and getting to a container, though CVE
 | :----------------------------------------------------: | :---------------------------------------------------------------------------------: |
 |      Can be overridden as it exists as a default       | Fixed actions, cannot be overridden by default (requires ``--entrypoint`` to do so) |
 | Default args (in case not specified in docker command) |                                    Main process                                     |
-
 
 ## Hosting
 
