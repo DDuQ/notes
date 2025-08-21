@@ -1,76 +1,16 @@
-# Azure Services Used 
 
--  [[Deploying .NET apps to Azure#Azure Container Apps|Azure Container Registry]]
--  [[Deploying .NET apps to Azure#Azure SQL Database|Azure SQL Database]]
--  [[Deploying .NET apps to Azure#Azure Container Apps|Azure Container Apps]]
--  [[Deploying .NET apps to Azure#Azure Log Analytics Workspace|Azure Log Analytics Workspace]]
+# Services Used
+## Azure 
+-  [[Azure Services#Azure Container Apps|Azure Container Registry]]
+-  [[Azure Services#Azure SQL Database|Azure SQL Database]]
+-  [[Azure Services#Azure Container Apps|Azure Container Apps]]
+-  [[Azure Services#Azure Log Analytics Workspace|Azure Log Analytics Workspace]]
+## Deployment tools
+- [[Docker]] 
+- [[Terraform]]
+- [[GitHub Actions]]
   
-## Why to use Azure Container Apps
-
-![[Deploying .NET apps to Azure-1.jpeg|299x387]]
-### Serverless
-Serverless service to run containerized applications which is built on top of Kubernetes (strong for scalability and security).
-### Fully managed cloud native  
-platform We won't have to worry about OS, updates, patches or configuration. Azure takes care of it.
-### Scalability (dynamic nature)
-As mention as it is build on top of Kubernetes it will be able to scale an application (create instances) as required by traffic and then scale down as it reduces.
-### Security
-Being built on Kubernetes as well as being part of Azure's ecosystem it brings a strong foundation for security and governance (allowing to leverage identity and RBAC solution into our container app).
-
-## Why to use Azure Container Registry
-
-![[Deploying .NET apps to Azure-2.jpeg|301x362]]
-### Automated container building and patching
-Includes base images updates and task scheduling.
-
-### Geo-replication
-To efficiently manage a single registry across multiple regions.
-
-### Integrated Security
-with Entra ID \[formerly known as Azure Active Directory (Azure AD)], role-based access control, [[Docker]] Content Trust and virtual network integration.
-
-
-## Why to use Azure SQL Database
-
-![[Deploying .NET apps to Azure-3.jpeg|296x341]]
-### Hyperscale
-Allows for rapid scale up and down based on our needs.
-### Serverless compute
-We won't be charged when not using the database, it will go to sleep when not being used by the app container thus saving us costs.
-### AI-Ready
-Capabilities to add AI features such as Azure OpenAI, and Azure AI search.
-
-## Why to use Log Analytics Workspace
-
-![[Deploying .NET apps to Azure-4.jpeg|324x381]]
-
-### Visualization Tools
-Allows to take the logs from container apps, and create dashboards for visualization.
-### Powerful Data Platform
-Enables troubleshooting, diagnosing and analyzing telemetry data.
-### Curated Insights
-Customized monitoring experience with minimal configuration.
-
-
-# Infrastructure as Code
-
-![[Deploying .NET apps to Azure-5.jpeg|624x194]]
-# Terraform
-
-![[Deploying .NET apps to Azure-6.jpeg|477x253]]
-
-## Declarative Language
-It has a structure for us to follow and have resources created.
-## Automation
-We can connect with different CI/CD infrastructure in order to automate the creation of resources automatically.
-## Consistency
-While we rely on ourselves to setup resources directly (containers, web api, databases, container registry, etc.) on Azure portal UI it is a better approach to use code to do so. 
-
-This reduces the possible errors to constantly creating resources since we guarantee to have the exact same configuration on different environments.
-## Multi-cloud Management
-Allows to connect to different cloud providers.
-
-# Building the services
+# Building the services on [[Terraform]]
 
 ## Variables  
 Essentially assigned typed values that will allow direct reference to static data which describes its purpose.
@@ -349,10 +289,6 @@ This resource configuration essentially will allow all azure resources to connec
 
 # CI/CD With GitHub Actions
 
-![[Deploying .NET apps to Azure-10.jpeg|693x138]]
-
-![[Deploying .NET apps to Azure-11.jpeg|0x0]]
-
 ## GitHub Actions 101
 
 ### Yaml
@@ -483,7 +419,6 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}  
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}  
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}  
-
 ```
 
 Here we specify ARM (Azure Resource Manager) variables for the ARM template, which will be used by the terraform commands.

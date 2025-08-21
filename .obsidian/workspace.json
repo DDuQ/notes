@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
+                "file": "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
                 "mode": "source",
                 "source": false
               },
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "areas/Docker.md",
+                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Docker"
+              "title": "Backlinks for Deploying .NET apps to Azure"
             }
           },
           {
@@ -131,12 +131,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "areas/Docker.md",
+                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Docker"
+              "title": "Outgoing links from Deploying .NET apps to Azure"
             }
           },
           {
@@ -199,7 +199,18 @@
   },
   "active": "2d62be8ae5151d29",
   "lastOpenFiles": [
-    "Technical/DevOps/Deploying .NET apps to Azure.md",
+    "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
+    "Technical/Cloud",
+    "Technical/DevOps/Deployment/Terraform.md",
+    "limbo/DDD (Domain Driven Design).md",
+    "limbo/Entity.md",
+    "limbo/Styles config.md",
+    "limbo/Value Object.md",
+    "Technical/DevOps/Deployment/Docker.md",
+    "Technical/Cloud/Azure/Azure Services.md",
+    "Technical/DevOps/Deployment/GitHub Actions.md",
+    "Technical/Cloud/Azure",
+    "Technical/DevOps/Deployment",
     "files/Deploying .NET apps to Azure-3.png",
     "files/Deploying .NET apps to Azure-3.jpeg",
     "files/Docker-3.jpeg",
@@ -210,15 +221,11 @@
     "files/Docker-7.jpeg",
     "files/Docker-8.jpeg",
     "files/Docker-9.jpeg",
-    "limbo/Styles config.md",
-    "Technical/DevOps/Docker.md",
     "README.md",
     "Technical/Architecture",
     "Technical/DevOps",
     "Technical",
-    "limbo/DDD (Domain Driven Design).md",
     "Technical/Architecture/Domain Driven Design Index.md",
-    "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md",
-    "limbo/Entity.md"
+    "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md"
   ]
 }
