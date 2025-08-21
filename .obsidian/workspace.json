@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
+                "file": "Technical/DevOps/Deployment/Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deploying .NET apps to Azure"
+              "title": "Docker"
             }
           }
         ]
@@ -160,12 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Technical/DevOps/Deployment/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Docker"
             }
           },
           {
@@ -197,7 +198,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d62be8ae5151d29",
+  "active": "a0e25c20d3c5c003",
   "lastOpenFiles": [
     "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
     "Technical/Cloud",

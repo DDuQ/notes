@@ -2,9 +2,9 @@
 
 ## Containers VS Virtual Machines
 
-|                                                                    Container                                                                    |                            Virtual Machine                             |
-| :---------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| Designed to run a single app that share a host kernel. <br><br>Minimal interaction through CLI.<br><br>Lightweight to run / delete (immutable). | Full OS system.<br><br>Can be interacted with through UI and modified. |
+|                                                                    Container                                                                    |                              Virtual Machine                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------: |
+| Designed to run a single app that share a host kernel. <br><br>Minimal interaction through CLI.<br><br>Lightweight to run / delete (immutable). | <br>Full OS system.<br><br>Can be interacted with through UI and modified. |
 ## Image
 Template for a container when first created. 
 Makes easier setup for working in teams.
