@@ -160,13 +160,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Deploying .NET apps to Azure"
+              "title": "Outline"
             }
           },
           {
@@ -198,12 +197,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0e25c20d3c5c003",
+  "active": "2d62be8ae5151d29",
   "lastOpenFiles": [
-    "files/Deploying .NET apps to Azure-12.jpeg",
     "Technical/DevOps/Deploying .NET apps to Azure.md",
-    "files/Deploying .NET apps to Azure-13.jpeg",
-    "files/image-1.jpeg",
+    "files/Deploying .NET apps to Azure-3.png",
+    "files/Deploying .NET apps to Azure-3.jpeg",
+    "files/Docker-3.jpeg",
+    "files/Docker.jpeg",
+    "files/Docker-4.jpeg",
+    "files/Docker-5.jpeg",
+    "files/Docker-6.jpeg",
+    "files/Docker-7.jpeg",
+    "files/Docker-8.jpeg",
+    "files/Docker-9.jpeg",
+    "limbo/Styles config.md",
     "Technical/DevOps/Docker.md",
     "README.md",
     "Technical/Architecture",
@@ -211,15 +218,7 @@
     "Technical",
     "limbo/DDD (Domain Driven Design).md",
     "Technical/Architecture/Domain Driven Design Index.md",
-    "files/Deploying .NET apps to Azure-9.jpeg",
-    "files/Deploying .NET apps to Azure-6.jpeg",
-    "files/Deploying .NET apps to Azure-7.jpeg",
-    "files/Deploying .NET apps to Azure-8.jpeg",
-    "files/Deploying .NET apps to Azure-10.jpeg",
-    "files/Deploying .NET apps to Azure-19.jpeg",
-    "files/Deploying .NET apps to Azure-17.jpeg",
     "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md",
-    "limbo/Entity.md",
-    "limbo/Styles config.md"
+    "limbo/Entity.md"
   ]
 }
