@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2d62be8ae5151d29",
+            "id": "a0e25c20d3c5c003",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "areas/Deploying .NET apps to Azure.md",
+                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
                 "mode": "source",
                 "source": false
               },
@@ -33,6 +33,7 @@
       {
         "id": "ddf94504dcee1df1",
         "type": "tabs",
+        "dimension": 74.96296296296296,
         "children": [
           {
             "id": "e5694daadf55ff22",
@@ -72,6 +73,23 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "885704ad861dc3a0",
+        "type": "tabs",
+        "dimension": 25.037037037037035,
+        "children": [
+          {
+            "id": "2d62be8ae5151d29",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -142,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "areas/Deploying .NET apps to Azure.md",
+                "file": "Technical/DevOps/Deploying .NET apps to Azure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -162,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -170,6 +188,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -179,23 +198,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d62be8ae5151d29",
+  "active": "a0e25c20d3c5c003",
   "lastOpenFiles": [
-    "areas/Deploying .NET apps to Azure.md",
-    "areas/Docker.md",
+    "files/Deploying .NET apps to Azure-12.jpeg",
+    "Technical/DevOps/Deploying .NET apps to Azure.md",
+    "files/Deploying .NET apps to Azure-13.jpeg",
+    "files/image-1.jpeg",
+    "Technical/DevOps/Docker.md",
+    "README.md",
+    "Technical/Architecture",
+    "Technical/DevOps",
+    "Technical",
+    "limbo/DDD (Domain Driven Design).md",
+    "Technical/Architecture/Domain Driven Design Index.md",
     "files/Deploying .NET apps to Azure-9.jpeg",
-    "files/image.jpeg",
     "files/Deploying .NET apps to Azure-6.jpeg",
     "files/Deploying .NET apps to Azure-7.jpeg",
     "files/Deploying .NET apps to Azure-8.jpeg",
     "files/Deploying .NET apps to Azure-10.jpeg",
     "files/Deploying .NET apps to Azure-19.jpeg",
     "files/Deploying .NET apps to Azure-17.jpeg",
-    "files/Deploying .NET apps to Azure-16.jpeg",
-    "files/Deploying .NET apps to Azure-15.jpeg",
     "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md",
     "limbo/Entity.md",
-    "limbo/Styles config.md",
-    "README.md"
+    "limbo/Styles config.md"
   ]
 }

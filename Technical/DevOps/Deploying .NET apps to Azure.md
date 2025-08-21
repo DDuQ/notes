@@ -336,14 +336,14 @@ This resource configuration essentially will allow all azure resources to connec
 
 # Command Workflow
 
-1. ``terraform init`` - Scans the setup and checks for ``required_providers`` to pull the image.
-2. ``terraform plan`` - Will compare against Azure (if the resource already exists) and then create a plan to materialize said resource.
+1. ``terraform init``: Scans the setup and checks for ``required_providers`` to pull the image.
+2. ``terraform plan``: Will compare against Azure (if the resource already exists) and then create a plan to materialize said resource.
 
 	![[Deploying .NET apps to Azure-8.jpeg|641x268]]
 
 3. ``terraform apply`` - Executes the plan from point 2 (requires input to approve the plan).
 
-	![[Deploying .NET apps to Azure-9.jpeg|641x259]]
+	![[Deploying .NET apps to Azure-9.jpeg|640x259]]
    
 
 
@@ -372,12 +372,18 @@ Can be seen displayed on GitHub like this:
 Determines that an action will trigger the workflow.
 ##### ``push`` 
 Action.
+##### ``paths``
+Defines which specific paths will trigger the workflow.
+##### ``paths-ignore``
+Defines which paths will be ignore (won't trigger the workflow).
 ##### ``branches``
 Defines which branches will trigger the workflow, when the action happens.
 
 ```yaml 
 on:  
-  push:  
+  push:
+	paths-ignore:  
+	  - 'iac/**'
     branches:  
       - main
 ```
@@ -451,3 +457,110 @@ deploy-container-to-ACS:
   runs-on: ubuntu-latest  
   needs: build-and-deploy
 ```
+
+## GitHub Actions for IaC
+
+In order to leverage the IaC created with [[Deploying .NET apps to Azure#Building the services|Terraform]], we'll create a new workflow:
+```yaml
+name: "IaC Deploy"  
+  
+on:  
+  push:  
+    paths:  
+      - 'iac/**'  
+    branches:  
+      - main  
+```
+
+**Note:** Take on mind that both [[Deploying .NET apps to Azure#``paths``|paths]] and [[Deploying .NET apps to Azure#``paths-ignore``|paths-ignore]] helps us to isolate the scope of our workflows.
+
+```yaml
+jobs:  
+  terraform-deploy:  
+    runs-on: ubuntu-latest  
+    env:  
+      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}  
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}  
+      ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}  
+      ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}  
+
+```
+
+Here we specify ARM (Azure Resource Manager) variables for the ARM template, which will be used by the terraform commands.
+
+```yaml	  
+    steps:  
+      - name: Checkout Repo  
+        uses: actions/checkout@v3  
+```
+
+This is a common step to make our source code available (for following actions to be able to run commands on it).
+
+```yaml 
+      - name: Azure Login  
+        uses: azure/login@v1  
+        with:  
+          creds: ${{ secrets.AZURE_CREDENTIALS }}  
+```
+
+ Aside from the environment variables this specific credential allows us to authenticate in order to use azure services.
+
+```yaml
+      - name: Terraform install  
+        uses: hashicorp/setup-terraform@v3  
+        with:  
+          terraform_version: 'latest'  
+          - name: Terraform init  
+        run: terraform init  
+        working-directory: ./iac/  
+          
+      - name: Terraform Validate  
+        run: terraform validate  
+        working-directory: ./iac/  
+          
+      - name: Terraform Plan  
+        run: terraform plan -var="sql_pass=${{ secrets.TF_VAR_DB_PASSWORD }}" -out=tfplan  
+        working-directory: ./iac/  
+          
+      - name: Terraform Apply  
+        run: terraform apply -auto-approve tfplan  
+        working-directory: ./iac/  
+          
+      - name: Notify failure  
+        if: failure()  
+        run: echo "Terraform deployment failed for ${{ github.ref_name }}"
+```
+
+All those commands are part of the [[Deploying .NET apps to Azure#Terraform|Terraform]] CLI, allowing us to leverage the IaC we've created in the path: *./iac/*,  specifying ``working-directory`` will run the commands on the correct place.
+
+Also, noteworthy mention:
+
+``-var``: Allows us to specify the variable *sql_pass* which holds the password of our database (otherwise we would need to input the password manually).
+
+``-out``: Allows us to set the output of the current command as a variable; **tfplan**.
+This will be used later when applying it.
+
+``-auto-approve``: Declares that it will automatically approve **tfplan**.
+
+
+## GitHub secrets and variables
+
+
+### Secrets
+
+| Name                                                    | Value                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ACR_PASSWORD                                            | When the Azure Container Registry gets created, it can be found on *Settings > Access keys*                                                                                                                                                                                                          |
+| ACR_USERNAME                                            | Same as ACR_PASSWORD                                                                                                                                                                                                                                                                                 |
+| AZURE_CREDENTIALS                                       | It will require to run a command in Terminal (being logged into Azure account):<br><br>```shell<br>az ad sp create-for-rbac --name github-auth --role contributor --scopes /subscriptions/dd28d209-7ba1-4ba1-ab36-0cd05e2e3308/resourcegroups/capybarapetapp-rg --json-auth --output json<br>```<br> |
+| DB_CONNECTION_STRING                                    | When SQL Server as well as database gets created it will provide a connection string (might require changes depending on config). <br>It can be found on *Settings > Connection strings*                                                                                                             |
+| TF_VAR_DB_PASSWORD                                      | Password defined for the SQL database.                                                                                                                                                                                                                                                               |
+| ARM_CLIENT_ID<br>ARM_CLIENT_SECRET<br><br>ARM_TENANT_ID | It will require to run a command in Terminal (being logged into Azure account):<br><br>```shell<br>az ad sp create-for-rbac --name devaccess<br>```                                                                                                                                                  |
+| ARM_SUBSCRIPTION_ID                                     | Can be found when the resource group gets created.                                                                                                                                                                                                                                                   |
+
+### Variables
+
+| Name       | Value                                |
+| ---------- | ------------------------------------ |
+| ACR_SERVER | capybarapetappregistrydev.azurecr.io |
+| APP_NAME   | capybarapetapp                       |
