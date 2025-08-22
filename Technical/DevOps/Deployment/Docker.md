@@ -1,4 +1,10 @@
-# **Core concepts**
+# Definition
+
+Open-source platform that allows to package applications (and their dependencies) into containers.
+
+Containers are lightweight, portable, and consistent environments that ensure your application runs the same way across development, testing, and production.
+
+# Core concepts
 
 ## Containers VS Virtual Machines
 
@@ -84,7 +90,7 @@ E.g. build stage for building our image contents | publish to publish our applic
 ## Docker ignore 
 Similar to .gitignore
 
-# **Persistent Storage**
+# Persistent Storage
 
 ![[Docker-11.jpeg|700x359]]
 
@@ -137,7 +143,7 @@ By default in docker compose will create a network based on bridge type.
 
 Docker desktop adds DNS entries - ``host.docker.internal`` / ``gateway.docker.internal`` - into hosts file (works on Linux, Windows, Mac) which allows a common way to access hosts' data.
 
-# **Security**
+# Security
 
 ## Image scanning
 
@@ -149,10 +155,13 @@ Docker has a couple of layers of security and getting to a container, though CVE
 
 ## Running containers as non-root
 
-``RUN adduser --disabled-password --gecos '' appuser`` 
-``USER appuser``
-	This is a bash command that changes to a non-root user to reinforce security before we set the entrypoints for our app.
-	(gecos means don't interactively prompt for various info about the user)
+```yaml
+RUN adduser --disabled-password --gecos '' appuser 
+USER appuser
+```
+
+This is a bash command that changes to a non-root user to reinforce security before we set the entrypoints for our app.
+(gecos means don't interactively prompt for various info about the user)
 
 
 ## CMD VS Entrypoint

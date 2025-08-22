@@ -1,7 +1,11 @@
 # Definition
 
-![[Deploying .NET apps to Azure-10.jpeg|693x138]]
+**CI/CD (Continuous Integration and Continuous Deployment)** and **automation platform** built directly into GitHub. It lets you automate tasks in your software development workflow, such as:
+
+- **Building and testing code** when you push changes to your repository.
+- **Deploying applications** to servers or cloud providers automatically.
+- **Running scripts** for tasks like linting, formatting, or security checks.
 
 # Workflow
 
-![[Deploying .NET apps to Azure-11.jpeg|0x0]]
+![[GitHub Actions-1.jpeg|700x465]]

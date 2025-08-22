@@ -1,4 +1,10 @@
-# Benefits
+# Definition
+
+Open-source Infrastructure as Code (IaC) tool that allows developers and IT teams to define, provision, and manage cloud resources using a declarative configuration language. 
+
+With Terraform, you can automate deployments, ensure consistency across environments, and manage infrastructure at scale across multiple cloud providers.
+
+# Qualities
 
 ![[Deploying .NET apps to Azure-6.jpeg|477x253]]
 
@@ -12,9 +18,3 @@ While we rely on ourselves to setup resources directly (containers, web api, dat
 This reduces the possible errors to constantly creating resources since we guarantee to have the exact same configuration on different environments.
 ## Multi-cloud Management
 Allows to connect to different cloud providers.
-
-
-# Terraform for Infrastructure as Code
-
-![[Deploying .NET apps to Azure-5.jpeg|624x194]]
-
