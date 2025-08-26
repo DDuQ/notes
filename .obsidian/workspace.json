@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Frontend/Blazor.md",
+                "file": "Technical/Frontend/Blazor/Blazor Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blazor"
+              "title": "Blazor Syntax"
             }
           },
           {
@@ -174,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Frontend/Blazor.md",
+                "file": "Technical/Frontend/Blazor/Blazor Syntax.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Blazor"
+              "title": "Outline of Blazor Syntax"
             }
           },
           {
@@ -214,10 +214,13 @@
   },
   "active": "a0e25c20d3c5c003",
   "lastOpenFiles": [
-    "files/Blazor-1.jpeg",
+    "Technical/Frontend/Blazor/Blazor Theory.md",
+    "Technical/Frontend/Blazor/Blazor Syntax.md",
+    "Technical/Frontend/Blazor",
     "Technical/Frontend/SignalR.md",
-    "Technical/Frontend/Blazor.md",
     "Technical/Frontend/WebAssembly.md",
+    "Technical/Cloud/Azure/Azure Services.md",
+    "files/Blazor-1.jpeg",
     "Technical/DevOps/Deployment/Kubernetes.md",
     "Technical/Frontend",
     "Technical/DevOps/Deployment/Terraform.md",
@@ -228,7 +231,6 @@
     "files/Kubernetes-3.jpeg",
     "files/Kubernetes-2.jpeg",
     "files/Kubernetes-1.jpeg",
-    "Technical/Cloud/Azure/Azure Services.md",
     "Technical/Cloud",
     "limbo/DDD (Domain Driven Design).md",
     "limbo/Entity.md",
@@ -241,7 +243,6 @@
     "files/Docker-3.jpeg",
     "files/Docker.jpeg",
     "files/Docker-4.jpeg",
-    "files/Docker-5.jpeg",
     "README.md",
     "Technical/Architecture",
     "Technical/DevOps",

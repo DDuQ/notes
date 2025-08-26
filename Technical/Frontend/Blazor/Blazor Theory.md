@@ -29,7 +29,7 @@ Disadvantages:
 
 ## How it works
 
-![[Blazor-1.jpeg]]
+![[Blazor-1.jpeg|241x295]]
 We have a server that contains Razor components, those are rendered into Html.
 Blazor creates a render tree; a digital representation of the DOM.
 
