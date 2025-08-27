@@ -324,3 +324,46 @@ One key feature of components is how we manage bindings.  To handle binding we w
 }
 ```
 
+## Demo
+
+`ParentComponent.razor`
+```csharp
+@* This wont work, as it binds one way. *@
+<BindingComponent Value="@bindingComponentValue1" /> @bindingComponentValue1
+
+@* Here we automatically set two way binding. *@
+<BindingComponent @bind-Value="@bindingComponentValue2" /> @bindingComponentValue2
+
+@* Manually sets two way binding with the event handler. *@
+<BindingComponent Value="@bindingComponentValue3" ValueChanged="ValueChangedMethod" /> @bindingComponentValue3
+
+@code {
+    string bindingComponentValue1 = "Before update";
+    string bindingComponentValue2 = "Before update";
+    string bindingComponentValue3 = "Before update";
+    private void ValueChangedMethod(string value)
+    {
+	    bindingComponentValue3 = value;
+    }
+}
+```
+
+`BindingComponent.razor` 
+```csharp
+<button @onclick="UpdateValueAsync">Update me</button>
+@code{
+	[Parameter]
+	public string Value { get; set; }
+	[Parameter]
+	public EventCallback<string> ValueChanged { get; set; }
+	[Parameter]
+	public Expression<Func<string>> ValueExpression { get; set; }
+	
+	private async Task UpdateValueAsync()
+	{
+		Value = DateTime.Now.ToString();
+		<!-- This is required in order to update Value. -->
+		await ValueChanged.InvokeAsync(Value); 
+	}
+}
+```
