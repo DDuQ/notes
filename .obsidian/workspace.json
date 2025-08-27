@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "0fe54367a79c0a1f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
+          },
+          {
             "id": "ac58892bf471c2b1",
             "type": "leaf",
             "state": {
@@ -110,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 337,
+    "collapsed": true
   },
   "right": {
     "id": "3472ef3a8d76dc59",
@@ -198,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343
+    "width": 343,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,9 +228,10 @@
   },
   "active": "a0e25c20d3c5c003",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Technical/Frontend/Blazor/Blazor Syntax.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
     "Projects/Capybara-Pet-App/Ideas.md",
-    "Technical/Frontend/Blazor/Blazor Syntax.md",
     "Projects/Capybara-Pet-App",
     "Projects",
     "files/Blazor Syntax-1.jpeg",

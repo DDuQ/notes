@@ -20,7 +20,7 @@ Those differ a bit different from the backend solutions. So it's better to be cl
 	This works the same regardless of the hosting model.
 
 # Directives
-### ``@page``
+## ``@page``
 Sets the route for the current page we will be working on. This allows us to reach the page by an identifier.
 
 ```csharp
@@ -29,7 +29,7 @@ Sets the route for the current page we will be working on. This allows us to rea
 <h3>CodeDemo</h3>  
 ```
 
-### ``@code``
+## ``@code``
 Block that allows for the creation of variables or logic in general that can be used by the html structure of our page.
 
 ```csharp
@@ -43,15 +43,16 @@ Block that allows for the creation of variables or logic in general that can be 
 string name = "Capy experiment";  
 }
 ```
-#### `[Parameter]`
+### `[Parameter]`
 Marks a public property so it can receive a value from a *parent component* or from a *route parameter* (if the component has an `@page` directive with matching placeholders).
 
-**Parent component:** 
+`Parent.razor`
 ```csharp
-<!-- Parent.razor -->
 <Child Title="Hello Blazor!" />
+```
 
-<!-- Child.razor -->
+`Child.razor`
+```csharp
 <h3>@Title</h3>
 
 @code {
@@ -60,7 +61,7 @@ Marks a public property so it can receive a value from a *parent component* or f
 }
 ```
 
-**URL Route:**
+`URLRoute.razor`
 ```csharp
 @page "/pagedemo/{Variable}"
 
@@ -72,7 +73,7 @@ Marks a public property so it can receive a value from a *parent component* or f
 }
 ```
 
-### `@ (Code block)`
+## `@ (Code block)`
 Here we have a Blazor code block, which executes immediately when the page is rendered: 
 
 ```csharp
@@ -92,7 +93,7 @@ Here we have a Blazor code block, which executes immediately when the page is re
 	- Use **`@{ }`** for _lightweight logic_ in markup (variables, inline conditions).
 	- Use **`@code { }`** for _real component logic_ like state, event handlers, and lifecycle methods.
 
-### `@typeparam`
+## `@typeparam`
 This allows us to use generics for our components.
 
 ```csharp
@@ -123,7 +124,7 @@ This allows us to use generics for our components.
 }
 ```
 
-### `@attribute`
+## `@attribute`
 It allows to use any kind of attribute in our components, normally used for authorization.
 
 ```csharp
@@ -137,14 +138,16 @@ It allows to use any kind of attribute in our components, normally used for auth
 }
 ```
 
-### `@attributes`
+## `@attributes`
 Used to **capture and pass through additional attributes** from the parent component to an HTML element in the child component.
 
+`Parent.razor`
 ```csharp
-<!-- Parent -->
 <MyButton class="btn btn-primary" id="saveBtn" />
+```
 
-<!-- MyButton.razor -->
+`MyButton.razor`
+```csharp
 <button @attributes="AdditionalAttributes">Click me</button>
 
 @code {
@@ -153,14 +156,14 @@ Used to **capture and pass through additional attributes** from the parent compo
 }
 ```
 
-#### How is this different from [[Blazor Syntax#`@attribute`|@attribute]]
+### How is this different from [[Blazor Syntax#`@attribute`|@attribute]]
 
 | Directive     | Purpose                                                                           |
 | ------------- | --------------------------------------------------------------------------------- |
 | `@attribute`  | Adds a **C# attribute** to the generated component class. Example: `[Authorize]`. |
 | `@attributes` | Adds **HTML attributes** to a rendered HTML element inside a component.           |
 
-### `@using` and \_Imports.razor 
+## `@using` **and \_Imports.razor** 
 Using directive allows us to import specific components, functionalities to be available in the current page.
 
 ```csharp
@@ -169,8 +172,8 @@ Using directive allows us to import specific components, functionalities to be a
 
 On the other hand we have *_Imports.razor*  file which allows to centralize all those using directives into a single place so that all the files in the current folder and sub-folders will inherit them.
 
+`_Imports.razor`
 ```csharp
-<!-- _Imports.razor -->
 @using System.Net.Http
 @using System.Net.Http.Json
 @using Microsoft.AspNetCore.Components.Forms
@@ -184,7 +187,7 @@ On the other hand we have *_Imports.razor*  file which allows to centralize all 
 @using BlazorWebAppDemo.Components
 ```
 
-### `@layout`
+## `@layout`
 This tells a Razor component to use a **layout component** as a wrapper.
 
 - Layout components act like **templates**:  
@@ -209,18 +212,18 @@ This tells a Razor component to use a **layout component** as a wrapper.
   
 **NOTE**: Instead of writing `@layout MainLayout` on every page, it can be set globally in **`_Imports.razor`**:
 
+`_Imports.razor`
 ```csharp
-<!-- _Imports.razor -->
 @layout MainLayout
 ```
 
 Now all pages use `MainLayout` unless it's overridden.
 
-### `@onclick` & Event Callbacks
+## `@onclick` **& Event Callbacks**
 This directive allows us to call a method with custom logic whenever the event gets triggered (on click).
 
+`Parent.razor`
 ```csharp
-<!-- Parent -->
 <MyButton class="btn btn-primary" OnClick="IncrementCount">Click me</MyButton>
 
 @code{
@@ -231,8 +234,10 @@ This directive allows us to call a method with custom logic whenever the event g
 		currentCount++;
 	}
 }
+```
 
-<!-- MyButton.razor -->
+`MyButton.razor`
+```csharp
 <button @attributes="AdditionalAttributes" @onclick="OnButtonClickedAsync">Click me</button>
 
 @code {
@@ -257,10 +262,10 @@ When the button is clicked, `OnButtonClickedAsync` runs inside the child compone
 
 # Binding
 
-#### `@bind`
+## `@bind`
 Provides two-way data binding between a component property and a UI element’s value.
 
-#### `@bind-value` (Case-sensitive)
+## `@bind-value` **(Case-sensitive)**
 Used for **HTML elements** (like `<input>`).
     Explicitly binds to the lowercase HTML attribute `value`.
 
@@ -269,7 +274,7 @@ Used for **HTML elements** (like `<input>`).
 ```
 Here, `username` syncs with the HTML input’s `value` attribute.
 
-#### `@bind-Value` (Case-sensitive)
+## `@bind-Value` **(Case-sensitive)**
 Used for **Blazor components** that expose a parameter `Value` with `ValueChanged`.
 
 ```csharp
@@ -277,14 +282,14 @@ Used for **Blazor components** that expose a parameter `Value` with `ValueChange
 ```
 This uses the Blazor component’s property `Value` and event `ValueChanged`.
 
-#### `@bind-value:event`
+## `@bind-value:event`
 Allows customizing the event that triggers the binding update instead of the default (`onchange` for inputs).
 
 ```csharp
 <input @bind-value="textValue" @bind-value:event="oninput" />
 ```
 
-#### `@bind-value:after`
+## `@bind-value:after`
 Executes code **after** the binding updates the value.
 
 ```csharp
@@ -296,7 +301,7 @@ Executes code **after** the binding updates the value.
 }
 ```
 
-#### `@bind-value:get` & `@bind-value:set`
+## `@bind-value:get` **&** `@bind-value:set`
 Gives **full control** over binding by explicitly defining getter and setter logic.
 
 ```csharp
@@ -324,7 +329,7 @@ One key feature of components is how we manage bindings.  To handle binding we w
 }
 ```
 
-## Demo
+## **Demo**
 
 `ParentComponent.razor`
 ```csharp
@@ -367,3 +372,162 @@ One key feature of components is how we manage bindings.  To handle binding we w
 	}
 }
 ```
+
+# StateHasChanged
+
+This is a method on the `ComponentBase` class that tells Blazor:
+	 “Hey, the component’s state has changed; re-render the UI with the latest data.”
+
+Normally, Blazor automatically re-renders a component when it detects changes through events like button clicks, form submissions, or data binding. But if data changes **outside** of Blazor’s event system (e.g., in a timer, background task, or async call), Blazor doesn’t know it needs to update the UI.
+
+```csharp
+@rendermode InteractiveWebAssembly
+<h3>StateHasChangedDemo</h3>
+@currentTime.ToLongTimeString()
+@code {
+    TimeOnly currentTime;
+    System.Threading.Timer timer;
+    protected override void OnInitialized()
+    {
+        timer = new System.Threading.Timer(async _ =>
+        {
+            currentTime = TimeOnly.FromDateTime(DateTime.Now);
+            await InvokeAsync(StateHasChanged);
+        }, null, 0, 1000);
+    }
+}
+```
+
+**NOTE**: Do **NOT** use *StateHasChanged*, only do for very specific scenarios where needed (e.g. Blazor is not aware of UI updates).
+
+## **Demo**
+`MyButtonDemo.razor`
+```csharp
+@page "/MyButtonDemo"
+@rendermode InteractiveServer
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<MyButton class="btn btn-primary" OnClick="IncrementCountAsync">Click me</MyButton>
+
+@code {
+    private int currentCount = 0;
+
+    private async Task IncrementCountAsync()
+    {
+        await Task.Delay(2000);
+        currentCount++;
+    }
+}
+```
+
+`MyButton.razor`
+```csharp
+<button disabled="@isDisabled" @attributes="AdditionalAttributes" @onclick="OnButtonClickedAsync">Click me</button>
+
+@code {
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object>? AdditionalAttributes { get; set; }
+    
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+    private bool isExecuting = false;
+    private bool isDisabled => isExecuting;
+    
+    private async Task OnButtonClickedAsync()
+    {
+	    if(isExecuting)
+		    return;
+		isExecuting = true;
+		await InvokeAsync(StateHasChanged);
+	    await OnClick.InvokeAsync();
+	    isExecuting = false;
+    }
+}
+```
+
+# Cascading parameters
+
+This is way to **share data or services** with all components in the component tree without manually passing them through parameters at each level.
+## **When to use it**
+
+- App-wide data (e.g., theme, culture, user info).
+- Services or objects used by many components.
+- Avoiding "parameter drilling" through multiple layers.
+
+## **Types**
+
+### No Cascading (Manual Parameter Passing)
+- **Definition:** You explicitly pass parameters down the tree.
+- **Use case:** When only direct children need the value or you want explicit control.
+
+```csharp
+<h2>No cascading</h2>
+<NoCascadingParameter Parameter="@ValueToCascade" />
+<NoCascadingParameter Parameter="@ValueToCascade" />
+<NoCascadingParameter Parameter="@ValueToCascade" />
+```
+### Cascading
+- **Definition:** Shares a value with all child components in the subtree.
+- **Use case:** Simple, single-value scenarios.
+
+```csharp
+<h2>With cascading</h2>
+<CascadingValue Value="@ValueToCascade">
+    <WithCascadingParameter />
+    <WithCascadingParameter />
+    <WithCascadingParameter />
+</CascadingValue>
+```
+### Cascading with `Name`
+- **Definition:** Allows multiple cascading values of the **same type** to be distinguished by a name.
+- **Use case:** When you have several cascading values of the same type but with different meanings (e.g., "Theme", "Language").
+
+```csharp
+<h2>With cascading and name</h2>
+<CascadingValue Value="@ValueToCascade" Name="CParameter">
+    <WithCascadingParameterAndName />
+    <WithCascadingParameterAndName />
+</CascadingValue>
+```
+### Cascading with `IsFixed="true"`
+- **Definition:** Tells Blazor that the cascaded value will **never change**.
+- **Use case:** Performance optimization to avoid unnecessary re-rendering.
+
+```csharp
+<h2>With cascading and fixed</h2>
+<CascadingValue Value="@ValueToCascade" IsFixed="true">
+    <WithCascadingParameter />
+</CascadingValue>
+```
+
+### Root cascading
+- **Definition:** Provides a cascaded value at the root (`App.razor` or a top-level layout), making it available to the entire component hierarchy.
+- **Use case:** Ideal for global values like themes, user settings, or authentication state, so you don't have to manually wrap each component with `<CascadingValue>`.
+  
+`App.razor`
+```csharp
+<CascadingValue Value="DarkTheme">
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        </Found>
+        <NotFound>
+            <p>Page not found</p>
+        </NotFound>
+    </Router>
+</CascadingValue>
+```
+
+`ThemeDisplay.razor`
+```csharp
+<p>The current theme is: @Theme</p>
+
+@code {
+    [CascadingParameter] public string Theme { get; set; }
+}
+```
+
+So now **anywhere in the app**, `ThemeDisplay` will show "*DarkTheme*" without needing extra `<CascadingValue>` wrappers.
