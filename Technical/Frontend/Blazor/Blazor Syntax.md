@@ -166,6 +166,7 @@ Used to **capture and pass through additional attributes** from the parent compo
 ## `@using` **and \_Imports.razor** 
 Using directive allows us to import specific components, functionalities to be available in the current page.
 
+`UsingExample.razor`
 ```csharp
 @using System.Linq
 ```
@@ -185,6 +186,16 @@ On the other hand we have *_Imports.razor*  file which allows to centralize all 
 @using BlazorWebAppDemo
 @using BlazorWebAppDemo.Client
 @using BlazorWebAppDemo.Components
+```
+
+## `@inherits`
+Tells the component to **derive from a specified base class** instead of the default `ComponentBase`.
+
+`InheritsExample.razor`
+```csharp
+@inherits MyBaseComponent
+
+<h3>@message</h3>
 ```
 
 ## `@layout`
@@ -531,3 +542,36 @@ This is way to **share data or services** with all components in the component t
 ```
 
 So now **anywhere in the app**, `ThemeDisplay` will show "*DarkTheme*" without needing extra `<CascadingValue>` wrappers.
+
+# Code Behind
+
+This approach allows us to place our code into different files so that both structure and logic can have their own environments.  By doing this we favor **testability and reuse of code**. 
+
+`MyComponent.razor`
+```csharp
+<h3>@message</h3>
+```
+
+`MyComponent.razor.cs`
+```csharp
+public partial class MyComponent {
+    private string message = "Hello from code-behind!";
+}
+```
+
+There is also another way to achieve this through class inheritance, which will require to create a class that inherits from `ComponentBase` and also will require the [[Blazor Syntax#`@inherits`|@inherits]] directive.
+
+`MyComponent.razor`
+```csharp
+@inherits MyBaseComponent
+
+<h3>@message</h3>
+```
+
+`MyBaseComponent.cs`
+```csharp
+public class MyBaseComponent : ComponentBase 
+{
+    protected string message = "Hello from base class!";
+}
+```
