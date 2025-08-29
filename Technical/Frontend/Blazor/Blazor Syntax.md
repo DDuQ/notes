@@ -1,5 +1,5 @@
 
-# Concept
+# Definition
 
 When using Blazor, we will see .razor files. Those are the places where pages are defined.
 
@@ -575,3 +575,4 @@ public class MyBaseComponent : ComponentBase
     protected string message = "Hello from base class!";
 }
 ```
+
