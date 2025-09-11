@@ -25,14 +25,14 @@
             "id": "5561723608b86b4e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Technical/Backend/RabbitMQ.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "RabbitMQ"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ],
@@ -101,13 +101,10 @@
             "id": "2d62be8ae5151d29",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -178,13 +175,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Backend/RabbitMQ.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RabbitMQ"
+              "title": "Outline"
             }
           },
           {
@@ -198,7 +194,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -209,17 +205,17 @@
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false
     }
   },
-  "active": "37fb7fabe9ee7c99",
+  "active": "5561723608b86b4e",
   "lastOpenFiles": [
-    "Untitled.base",
     "Technical/Backend/RabbitMQ.md",
+    "Untitled.base",
     "files/RabbitMQ-2.jpeg",
     "files/RabbitMQ-1.jpeg",
     "Technical/Frontend/Blazor/Blazor Syntax.md",
