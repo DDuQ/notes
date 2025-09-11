@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Frontend/Blazor/State Management.md",
+                "file": "Technical/Backend/RabbitMQ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "State Management"
+              "title": "RabbitMQ"
             }
           }
         ],
@@ -101,10 +101,13 @@
             "id": "2d62be8ae5151d29",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "bases",
+              "state": {
+                "file": "Untitled.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled"
             }
           }
         ]
@@ -175,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Frontend/Blazor/State Management.md",
+                "file": "Technical/Backend/RabbitMQ.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of State Management"
+              "title": "Outline of RabbitMQ"
             }
           },
           {
@@ -213,16 +216,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5561723608b86b4e",
+  "active": "37fb7fabe9ee7c99",
   "lastOpenFiles": [
-    "Technical/Frontend/Blazor/Rendering.md",
-    "Technical/Frontend/Blazor/State Management.md",
+    "Untitled.base",
+    "Technical/Backend/RabbitMQ.md",
+    "files/RabbitMQ-2.jpeg",
+    "files/RabbitMQ-1.jpeg",
     "Technical/Frontend/Blazor/Blazor Syntax.md",
+    "Technical/Frontend/Blazor/Authentication.md",
+    "Technical/Cloud/Azure/Azure Services.md",
+    "Technical/Frontend/Blazor/State Management.md",
+    "Technical/Backend",
+    "Technical/Frontend/Blazor/Built-in Components.md",
+    "Technical/Frontend/Blazor/Rendering.md",
+    "Technical/Frontend/Blazor/Blazor Theory.md",
     "Technical/Frontend/SEO.md",
     "Technical/Frontend/SignalR.md",
-    "Technical/Frontend/Blazor/Blazor Theory.md",
     "files/Deploying .NET apps to Azure-10.jpeg",
-    "Untitled.base",
     "Untitled 1.base",
     "Untitled.md",
     "Projects/Capybara-Pet-App/Ideas.md",
@@ -231,7 +241,6 @@
     "files/Blazor Syntax-1.jpeg",
     "Technical/Frontend/Blazor",
     "Technical/Frontend/WebAssembly.md",
-    "Technical/Cloud/Azure/Azure Services.md",
     "files/Blazor-1.jpeg",
     "Technical/DevOps/Deployment/Kubernetes.md",
     "Technical/Frontend",
@@ -251,10 +260,7 @@
     "Technical/Cloud/Azure",
     "Technical/DevOps/Deployment",
     "files/Deploying .NET apps to Azure-3.png",
-    "files/Deploying .NET apps to Azure-3.jpeg",
-    "files/Docker-3.jpeg",
     "README.md",
-    "Technical/Architecture",
     "Technical/Architecture/Domain Driven Design Index.md",
     "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md"
   ]
