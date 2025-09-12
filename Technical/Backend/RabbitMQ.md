@@ -15,7 +15,7 @@ Core component which routes messages to [[RabbitMQ#Queue|queues]] based on certa
 
 There are different types of exchanges that achieve specific use-cases:
 ## Direct
-- Routes message to queues where the **binding key exactly matches** the message's routing key.
+- Routes message to queues where the **binding key exactly matches** the message's [[RabbitMQ#Routing key|routing key]].
 - Useful for point-to-point communication.
   
 ## Fanout

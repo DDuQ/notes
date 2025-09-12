@@ -13,26 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Frontend/Blazor/Rendering.md",
+                "file": "Technical/Backend/RabbitMQ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rendering"
+              "title": "RabbitMQ"
             }
           },
           {
-            "id": "5561723608b86b4e",
+            "id": "22ea73045d860738",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Technical/General essential concepts/SOLID.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "SOLID"
             }
           }
         ],
@@ -175,12 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Technical/General essential concepts/SOLID.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of SOLID"
             }
           },
           {
@@ -194,7 +195,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -212,9 +213,20 @@
       "graph:Open graph view": false
     }
   },
-  "active": "5561723608b86b4e",
+  "active": "22ea73045d860738",
   "lastOpenFiles": [
+    "Technical/General essential concepts/OOP.md",
+    "Technical/General essential concepts/SOLID.md",
+    "Technical/General essential concepts/Design Patterns.md",
+    "Technical/Frontend/WebAssembly.md",
+    "Technical/Frontend/SignalR.md",
+    "Technical/Frontend/SEO.md",
+    "Technical/DevOps/Deployment/Kubernetes.md",
+    "Technical/DevOps/Deployment/Terraform.md",
+    "Technical/General essential concepts",
+    "Untitled.md",
     "Technical/Backend/RabbitMQ.md",
+    "Technical/Frontend/Blazor/Rendering.md",
     "Untitled.base",
     "files/RabbitMQ-2.jpeg",
     "files/RabbitMQ-1.jpeg",
@@ -224,23 +236,16 @@
     "Technical/Frontend/Blazor/State Management.md",
     "Technical/Backend",
     "Technical/Frontend/Blazor/Built-in Components.md",
-    "Technical/Frontend/Blazor/Rendering.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
-    "Technical/Frontend/SEO.md",
-    "Technical/Frontend/SignalR.md",
     "files/Deploying .NET apps to Azure-10.jpeg",
     "Untitled 1.base",
-    "Untitled.md",
     "Projects/Capybara-Pet-App/Ideas.md",
     "Projects/Capybara-Pet-App",
     "Projects",
     "files/Blazor Syntax-1.jpeg",
     "Technical/Frontend/Blazor",
-    "Technical/Frontend/WebAssembly.md",
     "files/Blazor-1.jpeg",
-    "Technical/DevOps/Deployment/Kubernetes.md",
     "Technical/Frontend",
-    "Technical/DevOps/Deployment/Terraform.md",
     "Technical/DevOps/Deployment/Docker.md",
     "Technical/DevOps/Deployment/GitHub Actions.md",
     "files/GitHub Actions-1.jpeg",
@@ -254,10 +259,7 @@
     "limbo/Styles config.md",
     "limbo/Value Object.md",
     "Technical/Cloud/Azure",
-    "Technical/DevOps/Deployment",
     "files/Deploying .NET apps to Azure-3.png",
-    "README.md",
-    "Technical/Architecture/Domain Driven Design Index.md",
-    "files/4f74c6323f22239ab9ffe92ee30c6d2a_MD5.jpeg.md"
+    "README.md"
   ]
 }
