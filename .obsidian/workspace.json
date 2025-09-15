@@ -13,26 +13,68 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Backend/RabbitMQ.md",
+                "file": "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RabbitMQ"
+              "title": "DDD (Domain Driven Design)"
             }
           },
           {
-            "id": "22ea73045d860738",
+            "id": "41fae86869fd63e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/General essential concepts/SOLID.md",
+                "file": "Technical/General essential concepts/Design Patterns/Behavioral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOLID"
+              "title": "Behavioral"
+            }
+          },
+          {
+            "id": "fda07223b7d111b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Key modeling rules"
+            }
+          },
+          {
+            "id": "3d3908f10f5d0e49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Domain Modeling"
+            }
+          },
+          {
+            "id": "bf498ca29a22ce2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technical/Architecture/Domain Driven Design/Factory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Factory"
             }
           }
         ],
@@ -69,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"Domain model\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,13 +217,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/General essential concepts/SOLID.md",
+                "file": "Technical/General essential concepts/Design Patterns/Behavioral.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SOLID"
+              "title": "Outline of Behavioral"
             }
           },
           {
@@ -213,53 +255,53 @@
       "graph:Open graph view": false
     }
   },
-  "active": "22ea73045d860738",
+  "active": "41fae86869fd63e8",
   "lastOpenFiles": [
+    "Technical/General essential concepts/Design Patterns/Design Patterns.md",
+    "Technical/General essential concepts/Design Patterns/Behavioral.md",
     "Technical/General essential concepts/OOP.md",
+    "Technical/Backend/ASP.NET/Entity Framework.md",
+    "Technical/Backend/ASP.NET/Dapper.md",
+    "Technical/Backend/ASP.NET/Minimal controllers.md",
+    "Technical/Backend/ASP.NET/Controllers.md",
+    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
+    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
+    "Untitled.md",
+    "README.md",
+    "Untitled.base",
+    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
+    "files/DDD (Domain Driven Design)-4.jpeg",
+    "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
+    "Technical/Architecture/Domain Driven Design/Domain Services.md",
+    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
+    "Technical/Architecture/Domain Driven Design/Repositories.md",
+    "Technical/Architecture/Domain Driven Design/Aggregates.md",
+    "Technical/Architecture/Domain Driven Design/Factory.md",
+    "Technical/Architecture/Domain Driven Design/Value Object.md",
+    "Technical/Architecture/Domain Driven Design/Entity.md",
+    "Technical/Backend/RabbitMQ.md",
+    "Technical/Architecture/Domain Driven Design",
+    "limbo/Styles config.md",
+    "files/DDD (Domain Driven Design)-3.jpeg",
+    "files/DDD (Domain Driven Design)-2.jpeg",
+    "files/image.jpeg",
+    "files/DDD (Domain Driven Design)-1.jpeg",
+    "Technical/General essential concepts/Design Patterns/Structural.md",
+    "Technical/General essential concepts/Design Patterns/Creational.md",
     "Technical/General essential concepts/SOLID.md",
     "Technical/General essential concepts/Design Patterns.md",
-    "Technical/Frontend/WebAssembly.md",
-    "Technical/Frontend/SignalR.md",
-    "Technical/Frontend/SEO.md",
-    "Technical/DevOps/Deployment/Kubernetes.md",
-    "Technical/DevOps/Deployment/Terraform.md",
+    "Technical/General essential concepts/Design Patterns",
+    "Technical/Backend/ASP.NET",
     "Technical/General essential concepts",
-    "Untitled.md",
-    "Technical/Backend/RabbitMQ.md",
-    "Technical/Frontend/Blazor/Rendering.md",
-    "Untitled.base",
     "files/RabbitMQ-2.jpeg",
     "files/RabbitMQ-1.jpeg",
-    "Technical/Frontend/Blazor/Blazor Syntax.md",
-    "Technical/Frontend/Blazor/Authentication.md",
-    "Technical/Cloud/Azure/Azure Services.md",
-    "Technical/Frontend/Blazor/State Management.md",
     "Technical/Backend",
-    "Technical/Frontend/Blazor/Built-in Components.md",
-    "Technical/Frontend/Blazor/Blazor Theory.md",
     "files/Deploying .NET apps to Azure-10.jpeg",
     "Untitled 1.base",
-    "Projects/Capybara-Pet-App/Ideas.md",
     "Projects/Capybara-Pet-App",
     "Projects",
     "files/Blazor Syntax-1.jpeg",
     "Technical/Frontend/Blazor",
-    "files/Blazor-1.jpeg",
-    "Technical/Frontend",
-    "Technical/DevOps/Deployment/Docker.md",
-    "Technical/DevOps/Deployment/GitHub Actions.md",
-    "files/GitHub Actions-1.jpeg",
-    "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
-    "files/Kubernetes-3.jpeg",
-    "files/Kubernetes-2.jpeg",
-    "files/Kubernetes-1.jpeg",
-    "Technical/Cloud",
-    "limbo/DDD (Domain Driven Design).md",
-    "limbo/Entity.md",
-    "limbo/Styles config.md",
-    "limbo/Value Object.md",
-    "Technical/Cloud/Azure",
-    "files/Deploying .NET apps to Azure-3.png",
-    "README.md"
+    "files/Blazor-1.jpeg"
   ]
 }

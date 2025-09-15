@@ -1,0 +1,3 @@
+# Definition
+
+Objects that have a distinct identity that runs through time and different representations. 

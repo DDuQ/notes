@@ -84,10 +84,9 @@ Inheritance creates a strong coupling between the base class and derived classes
 ## Limited extensibility
 Modifications to the base class can become increasingly risky and costly over time. Developers avoid making necessary changes due to the fear of breaking existing functionality. (This is known Brittle software)
 ## **Mitigation strategies**
-Design principles such as Open/Closed and Dependency Inversion can be used, as well as design patterns like Composition over inheritance.
+Design principles such as Open/Closed and Dependency Inversion can be used, as well as design patterns like composition over inheritance.
 
 These approaches promote loose coupling, encapsulation and modular design reducing the impact of changes in base classes.
-
 
 # Source of concepts
 

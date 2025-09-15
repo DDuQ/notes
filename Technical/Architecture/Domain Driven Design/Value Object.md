@@ -1,3 +1,5 @@
+# Definition
+
 There are a couple of ways to define a Value Object, any of the following can apply:
 
 - Represents something in the domain and it's defined solely by its properties. 
