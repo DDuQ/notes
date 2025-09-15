@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/General essential concepts/OOP.md",
+                "file": "Technical/Architecture/Domain Driven Design/Key Concepts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOP"
+              "title": "Key Concepts"
             }
           }
         ]
@@ -153,6 +153,11 @@
   },
   "active": "8c85778d8915957a",
   "lastOpenFiles": [
+    "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
+    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
+    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
+    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
+    "Technical/General essential concepts/OOP.md",
     "Technical/General essential concepts/Design Patterns/Structural.md",
     "Technical/General essential concepts/Design Patterns/Design Patterns.md",
     "Technical/General essential concepts/Design Patterns/Creational.md",
@@ -165,14 +170,10 @@
     "Technical/Backend/ASP.NET",
     "Technical/Architecture/Domain Driven Design/Value Object.md",
     "Technical/Architecture/Domain Driven Design/Repositories.md",
-    "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
-    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
     "Technical/Architecture/Domain Driven Design/Factory.md",
     "Technical/Architecture/Domain Driven Design/Entity.md",
     "Technical/Architecture/Domain Driven Design/Domain Services.md",
-    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
     "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
-    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
     "Technical/Architecture/Domain Driven Design/Aggregates.md",
     "Technical/Architecture/Domain Driven Design",
     "Technical/Architecture",
