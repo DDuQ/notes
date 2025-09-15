@@ -13,7 +13,8 @@ Here we isolate one transaction to the process of deleting a Room, while wrappin
 
 - Aggregates ONLY reference other aggregates by Id.
 
-Note: As a common pattern, strongly typed Ids are used to encapsulate GUIDs (meaning creating a Value Object that contains this kind of Ids).
+>[!NOTE]
+As a common pattern, strongly typed Ids are used to encapsulate GUIDs (meaning creating a Value Object that contains this kind of Ids).
 
 ## No referencing nested entities
 

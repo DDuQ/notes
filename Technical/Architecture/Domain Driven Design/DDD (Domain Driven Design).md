@@ -24,6 +24,12 @@ The way that a specific domain is composed and all the parts involved (code-side
 
 Set of building blocks that allow us to model our Domain in a way that resembles the problem space.
 
+>[!NOTE] Noteworthy Patterns: 
+ Modules 
+ Application Services 
+ Bounded Contexts 
+ Ubiquitous Language
+
 ## Tactical Design vs Tactical Patterns 
 
 With Tactical Design we model our Domain, and we build it through the tools that Tactical Patterns provides.
@@ -31,24 +37,7 @@ With Tactical Design we model our Domain, and we build it through the tools that
 # (Tactical vs Strategic) Design 
 
 Both are complementary in an iterative process of discovering business rules in the process and to model them. Both Tactical and Strategic Design compose DDD.
-
-# Noteworthy Patterns: 
-
-- Modules 
-- Application Services 
-- Bounded Contexts 
-- Ubiquitous Language
-
-
-
-
-
-
-
-
-
-
-
+ 
 # Application Services vs Domain Services
 
 ## Application Services  
@@ -117,7 +106,8 @@ No matter when, the data is always in a valid state, their properties are always
 
 Approach where we allow the domain object to be in an invalid domain state (validation errors).
 
-Note: Prefer Always Valid Domain Model → We can’t access a property that is in an invalid state. We could use Factory pattern or static factory method for validation purposes. 
+>[!NOTE]
+Prefer Always Valid Domain Model → We can’t access a property that is in an invalid state. We could use Factory pattern or static factory method for validation purposes. 
 
 ## How to always maintain our domain valid?
 

@@ -51,7 +51,8 @@ Disadvantages:
 - Large footprint (many files to download).
 - Heavy dependence on Web APIs.
 
-**NOTE**: JSInterop is used in order to modify the DOM.
+>[!NOTE]
+JSInterop is used in order to modify the DOM.
 ## How it works
 
 Normally JavaScript would take the route:

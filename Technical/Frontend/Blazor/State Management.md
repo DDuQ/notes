@@ -32,7 +32,8 @@ services.AddScoped<ITodoService, TodoServiceDirecAccess>();
 
 As explained in [[Blazor Syntax#Dependency Injection|dependency injection]] we have to be aware on how we want to give a sense of maintained state through the workflows of the app, leveraging those could end in a good interactive experience for users.
 
-NOTE: It is key to use injected services appropriately so behavior is expected:
+>[!NOTE]
+It is key to use injected services appropriately so behavior is expected:
 
 `Singleton`: State persisted as long as the app is lived.
 `Scoped`: State will be persisted until the page is refreshed.

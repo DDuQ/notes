@@ -87,7 +87,8 @@ Here we have a Blazor code block, which executes immediately when the page is re
 }
 ```
 
-**NOTE**: This behaves different than [[Blazor Syntax#``@code``|@code]] directive, since it does not hold state, renders locally and is not aware of the lifecycle.
+>[!NOTE] 
+ This behaves different than [[Blazor Syntax#``@code``|@code]] directive, since it does not hold state, renders locally and is not aware of the lifecycle.
 
 **When to use then?**
 	- Use **`@{ }`** for _lightweight logic_ in markup (variables, inline conditions).
@@ -221,7 +222,8 @@ This tells a Razor component to use a **layout component** as a wrapper.
 </div>
 ```
   
-**NOTE**: Instead of writing `@layout MainLayout` on every page, it can be set globally in **`_Imports.razor`**:
+>[!NOTE] 
+Instead of writing `@layout MainLayout` on every page, it can be set globally in **`_Imports.razor`**:
 
 `_Imports.razor`
 ```csharp
@@ -409,7 +411,8 @@ Normally, Blazor automatically re-renders a component when it detects changes th
 }
 ```
 
-**NOTE**: Do **NOT** use *StateHasChanged*, only do for very specific scenarios where needed (e.g. Blazor is not aware of UI updates).
+>[!NOTE]
+Do **NOT** use *StateHasChanged*, only do for very specific scenarios where needed (e.g. Blazor is not aware of UI updates).
 
 ## **Demo**
 `MyButtonDemo.razor`

@@ -8,7 +8,8 @@ Open-source message broker that has a reliable message delivery and support for 
 *Producer -> Competing consumers*
 ![[RabbitMQ-2.jpeg|545x208]]
 
-**NOTE:** In practice [[RabbitMQ]] never publishes directly to a [[RabbitMQ#Queue|queue]], it does it through an [[RabbitMQ#Exchange|exchange]].
+>[!NOTE]
+In practice [[RabbitMQ]] never publishes directly to a [[RabbitMQ#Queue|queue]], it does it through an [[RabbitMQ#Exchange|exchange]].
 # Exchange
 
 Core component which routes messages to [[RabbitMQ#Queue|queues]] based on certain rules, called [[RabbitMQ#Bindings|bindings]].
@@ -36,7 +37,8 @@ This is a data structure which (in the context of message brokers) stores messag
 
 It follows the philosophy of FIFO; *First In First Out*.
 
-**NOTE:** Consumers never directly listen messages from exchanges, they do it through queues. 
+>[!NOTE]
+Consumers never directly listen messages from exchanges, they do it through queues. 
 
 # Bindings
 

@@ -5,7 +5,8 @@ Helps us to differentiate between Aggregates.
 - An Aggregate’s identifier must be unique within the system.
 - An entity’s identifier must be unique within its parent aggregate.
 
-Note: If we are using GUIDs within our system it is safe to say that an Entity is unique even without checking its parent identifier. But if the IDs are auto-incrementing within its parent aggregate the bullets mentioned should be considered.
+>[!NOTE]
+If we are using GUIDs within our system it is safe to say that an Entity is unique even without checking its parent identifier. But if the IDs are auto-incrementing within its parent aggregate the bullets mentioned should be considered.
 
 ## Domain object deletion  
 

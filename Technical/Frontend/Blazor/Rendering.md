@@ -3,7 +3,8 @@
 
 There are a set of lifecycle methods that are part of the component base class. We can override them trigger at the right time.
 
-**NOTE**: It is **recommended** to use render modes per the whole application instead of per component, given that we could lose some of the lifecycle functionality.
+>[!NOTE] Note
+It is **recommended** to use render modes per the whole application instead of per component, given that we could lose some of the lifecycle functionality.
 
 ## `SetParametersAsync` 
 Takes in a *ParameterView* (all the params from parent component).
@@ -19,11 +20,12 @@ public override Task SetParametersAsync(ParameterView parameters)
 ## `OnInitialized` & `OnInitializedAsync`
 This runs when the component is first created. Here we can setup initial state or fetch initial data.
 
-**NOTES**: 
-- It will run once when the component is rendered.
-	When running per component mode it behaves differently.
-	
-- `OnInitializedAsync` should be preferred when we are using asynchronous methods.
+>[!NOTE]
+ It will run once when the component is rendered. 
+ When running per component mode it behaves differently.
+
+>[!WARNING]
+`OnInitializedAsync` should be preferred when we are using asynchronous methods.
 
 ```csharp
 protected async override void OnInitialized()
@@ -78,7 +80,8 @@ protected override Task OnAfterRenderAsync(bool firstRender)
 ## `ShouldRender`
 Controls whether we should re-render components or not.
 
-**NOTE**: First render will always happen and we can control renders from there.
+>[!NOTE]
+First render will always happen and we can control renders from there.
 
 ```csharp
 protected override void ShouldRender()

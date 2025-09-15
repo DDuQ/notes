@@ -22,7 +22,8 @@ E.g. Latest : could point to image id 1 or image id 2 depending on the preferenc
 ``docker tag [image]:[name of the tag we want to create] : Create tags.
 ``docker rmi [image]:[name of the tag] : Removes images and also tags.
 
-**NOTE**: by default latest will be used as the name of the tag if not specified.
+>[!NOTE]
+by default latest will be used as the name of the tag if not specified.
 ## Layers
 There are **layers** created on top of a base image (with incremental changes). 
 Those are read-only (both layers and base image) and cached.
@@ -36,7 +37,8 @@ Initial the IDE (e.g. Visual Studio, Rider, etc.) will generate a generic templa
 
 ![[Docker-2.jpeg|520x352]]
 
-**NOTE**: Take on mind that each command is a [[Docker#Layers|layer]].
+>[!NOTE]
+Take on mind that each command is a [[Docker#Layers|layer]].
 
 At the left, always will start with a keyword (there are not a lot of them):
 ![[Docker-3.jpeg|121x277]]

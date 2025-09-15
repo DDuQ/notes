@@ -324,7 +324,8 @@ on:
       - main
 ```
 
-**NOTE**: Be careful about YAML spacing, it could drive into unexpected issues.
+>[!NOTE]
+Be careful about YAML spacing, it could drive into unexpected issues.
 
 #### ``jobs``
 Determines the start of the workflow.
@@ -408,7 +409,8 @@ on:
       - main  
 ```
 
-**Note:** Take on mind that both [[Deploying .NET apps to Azure#``paths``|paths]] and [[Deploying .NET apps to Azure#``paths-ignore``|paths-ignore]] helps us to isolate the scope of our workflows.
+>[!NOTE]
+Take on mind that both [[Deploying .NET apps to Azure#``paths``|paths]] and [[Deploying .NET apps to Azure#``paths-ignore``|paths-ignore]] helps us to isolate the scope of our workflows.
 
 ```yaml
 jobs:  
