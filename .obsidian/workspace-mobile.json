@@ -148,5 +148,34 @@
     }
   },
   "active": "8c85778d8915957a",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Technical/General essential concepts/Design Patterns/Structural.md",
+    "Technical/General essential concepts/Design Patterns/Design Patterns.md",
+    "Technical/General essential concepts/Design Patterns/Creational.md",
+    "Technical/General essential concepts/Design Patterns/Behavioral.md",
+    "Technical/General essential concepts/Design Patterns",
+    "Technical/Backend/ASP.NET/Minimal controllers.md",
+    "Technical/Backend/ASP.NET/Entity Framework.md",
+    "Technical/Backend/ASP.NET/Dapper.md",
+    "Technical/Backend/ASP.NET/Controllers.md",
+    "Technical/Backend/ASP.NET",
+    "Technical/Architecture/Domain Driven Design/Value Object.md",
+    "Technical/Architecture/Domain Driven Design/Repositories.md",
+    "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
+    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
+    "Technical/Architecture/Domain Driven Design/Factory.md",
+    "Technical/Architecture/Domain Driven Design/Entity.md",
+    "Technical/Architecture/Domain Driven Design/Domain Services.md",
+    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
+    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
+    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
+    "Technical/Architecture/Domain Driven Design/Aggregates.md",
+    "Technical/Architecture/Domain Driven Design",
+    "Technical/Architecture",
+    "files/image.jpeg",
+    "files/DDD (Domain Driven Design)-4.jpeg",
+    "files/DDD (Domain Driven Design)-3.jpeg",
+    "files/DDD (Domain Driven Design)-2.jpeg",
+    "files/DDD (Domain Driven Design)-1.jpeg"
+  ]
 }
