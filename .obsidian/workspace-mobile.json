@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Architecture/Domain Driven Design/Key Concepts.md",
+                "file": "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Key Concepts"
+              "title": "Memento"
             }
           }
         ]
@@ -142,6 +142,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -153,9 +154,10 @@
   },
   "active": "8c85778d8915957a",
   "lastOpenFiles": [
+    "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
+    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
     "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
     "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
-    "Technical/Architecture/Domain Driven Design/Key Concepts.md",
     "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
     "Technical/General essential concepts/OOP.md",
     "Technical/General essential concepts/Design Patterns/Structural.md",
