@@ -2,15 +2,13 @@
 
 OOP stands for Object-Oriented Programming. 
 
-It’s a **paradigm** where we represent *real-world objects* or *abstract entities*. 
-
-Objects are created from classes and can have properties (to hold state) and methods (to define behavior).
+It’s a paradigm where we model software around objects, which represent real-world or abstract entities. Objects are created from classes and can have properties (to hold state) and methods (to define behavior).
 
 # Core principles
 
 ## Encapsulation
 
-Involves bundling properties and methods into a class.
+Involves bundling properties and methods (behaviors) into a single unit called a class.
 Helps hiding internal logic of an object, by exposing only necessary methods.
 
 ## Abstraction
@@ -23,7 +21,7 @@ Involves creating new classes (**derived**) based on existing classes (**base**)
 
 Derived classes *will inherit properties and methods* from their base classes. Also, it can add new features or override existing ones.
 
-Inheritance usually is described in terms of **"is-a"** relationship.
+Inheritances usually is described in terms of **"is-a"** relationship.
 
 ## Polymorphism
 
@@ -41,7 +39,7 @@ Class A depends on an abstraction Interface X.
 
 ## Composition
 
-Involves creating complex objects by combining simpler objects. 
+Involves creating complex objects by combining simpler objects or components. 
 
 Objects are assembled together to form larger structures, with each component maintaining its own state and behavior.
 
