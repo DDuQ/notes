@@ -16,7 +16,7 @@ Depend on [[Observer#Subject (publisher)|subject]], and react to its notificatio
 ## Push
 ![[Excalidraw/Observer.excalidraw.md#^clippedframe=B1wZTswY3FW58W3MtBn-M|700]]
 ## Pull
-![[Excalidraw/Observer.excalidraw.md#^clippedframe=88UosiuK2NzBU6Ylaf6Zh|700]]
+![[Excalidraw/Observer.excalidraw.md#^frame=yJqjokgbQRyLSbHVxvC-C|700]]
 
 
 
