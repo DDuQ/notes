@@ -1,7 +1,6 @@
-
 # Concept
 
-**General, reusable solution to a common problem in software design**.
+**General, reusable solutions to a common problems in software design**.
 
 Instead of being a piece of finished code, a design pattern is more like a **template or blueprint** for how to solve a problem in a particular context.
 
