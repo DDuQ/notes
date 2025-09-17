@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
+                "file": "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Memento"
+              "title": "Behavioral"
             }
           }
         ]
@@ -152,8 +152,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "8c85778d8915957a",
+  "active": "64ff8cbeaab5ab42",
   "lastOpenFiles": [
+    "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
     "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
     "Technical/Architecture/Domain Driven Design/Key Concepts.md",
     "Technical/Architecture/Domain Driven Design/Key modeling rules.md",
