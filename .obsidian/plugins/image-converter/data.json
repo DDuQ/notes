@@ -119,7 +119,7 @@
       "ffmpegPreset": "medium"
     }
   ],
-  "selectedConversionPreset": "JPEG",
+  "selectedConversionPreset": "None",
   "globalPresets": [
     {
       "name": "WebP 75",
@@ -347,7 +347,7 @@
   "enableContextMenu": true,
   "showSpaceSavedNotification": true,
   "revertToOriginalIfLarger": false,
-  "enableImageCaptions": true,
+  "enableImageCaptions": false,
   "skipCaptionExtensions": "icns",
   "captionFontSize": "var(--font-smaller)",
   "captionColor": "var(--text-gray)",
@@ -361,5 +361,5 @@
   "captionLetterSpacing": "normal",
   "captionBorder": "none",
   "captionMarginTop": "4px",
-  "captionAlignment": "center"
+  "captionAlignment": "left"
 }

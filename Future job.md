@@ -1,7 +1,3 @@
-We are seeking a skilled Senior .NET Developer to join our development team. The ideal candidate will be a senior in modern .NET development practices with extensive experience in test-driven development, continuous integration/deployment, and enterprise-level software architecture. This role requires a professional who can design, develop, and maintain complex applications and contribute to architectural decisions.
-
-
-
 Responsibilities
 
 * Design, develop, and maintain robust .NET applications using current frameworks and best practices.
