@@ -11,14 +11,10 @@
             "id": "8c85778d8915957a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Behavioral"
+              "title": "New tab"
             }
           }
         ]
@@ -152,8 +148,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "64ff8cbeaab5ab42",
+  "active": "8c85778d8915957a",
   "lastOpenFiles": [
+    "Excalidraw/Observer.excalidraw.md",
+    "Technical/Essential Concepts/Design Patterns/Behavioral/Observer.md",
     "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
     "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
     "Technical/Architecture/Domain Driven Design/Key Concepts.md",
