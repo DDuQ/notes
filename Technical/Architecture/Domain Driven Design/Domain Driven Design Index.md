@@ -4,7 +4,7 @@
 - [[Value Object]]
 - [[Aggregates]]
 - [[Domain Services]]
-- [[Factory]]
+- [[Technical/Architecture/Domain Driven Design/Factory]]
 - [[Repositories]]
 - [[Orchestration approach]]
 - [[Eventual Consistency]]
