@@ -11,16 +11,11 @@ Area of knowledge or very specific and specialized activity around which the app
 To bridge the gap between business and code. By leveraging the use of Ubiquitous Language, Invariants and Objects of the domain.
 
 DDD is split into **strategic** and **tactical** design.
-
-# Strategic Design (What/Why?) 
-
-Visualize the whole picture of our Domain, being able to see the relationships between sub-domains.
-
-# Tactical Design (How?) 
+## Tactical Design (How?) 
 
 The way that a specific domain is composed and all the parts involved (code-side). Codebase that represents the Domain.
 
-## Tactical Patterns 
+### Tactical Patterns 
 
 Set of building blocks that allow us to model our Domain in a way that resembles the problem space.
 
@@ -30,11 +25,14 @@ Set of building blocks that allow us to model our Domain in a way that resembles
  Bounded Contexts 
  Ubiquitous Language
 
-## Tactical Design vs Tactical Patterns 
+### Tactical Design vs Tactical Patterns 
 
 With Tactical Design we model our Domain, and we build it through the tools that Tactical Patterns provides.
 
-# (Tactical vs Strategic) Design 
+## Strategic Design (What/Why?) 
+
+Visualize the whole picture of our Domain, being able to see the relationships between sub-domains.
+## (Tactical vs Strategic) Design 
 
 Both are complementary in an iterative process of discovering business rules in the process and to model them. Both Tactical and Strategic Design compose DDD.
  
@@ -71,7 +69,7 @@ Processing is broken down into smaller chunks and the entire state of the proces
 ### Use eventual consistency outside the boundary
 
 - DDD enables us to take complex business into small atomic units called aggregates, which have everything they need to make a business decision, giving us the confidence to make changes to that specific component and propagating events as needed to other aggregates, that will change based on their own business decisions.
-    
+
 
 # Rich vs Anemic domain Models
 
@@ -129,8 +127,6 @@ We want to focus only on the modeling part of DDD considering only the domain (b
 
 - Repository pattern promotes this by abstracting ourselves on the way objects are going to be persisted.
 
-  
-
 # Strategic Design
 
 Process of defining the large-scale structure of the system and mapping out the business domain.
@@ -181,48 +177,45 @@ In [User Management Context] a user is related to different profiles that we can
 - Open Host Service (OHS) 
 ## Team Relationships
 
-- ### Mutually Dependent 
+### Mutually Dependent 
 Shared artifacts (need to coordinate).
 
-- ### Free 
+### Free 
 Independent (little to no effect on other bounded context).
 
-- ### Upstream – Downstream 
+### Upstream – Downstream 
 Whatever changes upstream do affects downstream (like the first example provided).
-
   
 ## Patterns
 
-- ### Open-Host Service
+### Open-Host Service
 Provides domain models (like in Context Map patterns [example](https://docs.google.com/document/d/13Hp56HowKhDhlmcmGs2tdjMGXOCIsPGW5K-u_VtYwkI/edit#heading=h.j1pf7jryyhbe)).
 
-- ### Conformist
+### Conformist
 It conforms with the domain model provided by Bounded Context A (like in Context Map patterns [example](https://docs.google.com/document/d/13Hp56HowKhDhlmcmGs2tdjMGXOCIsPGW5K-u_VtYwkI/edit#heading=h.j1pf7jryyhbe)).
 
-- ### Anti-Corruption Layer 
+### Anti-Corruption Layer 
 Translator or adapter that converts data and requests between two bounded contexts, ensuring that Bounded context A does not have to deal with Bounded context B internal model or logic directly.
 
-- ### Shared Kernel 
+### Shared Kernel 
 Shared group of domain models between 2 bounded contexts.
 
-- ### Partnership  
+### Partnership  
 Mutually dependent bounded contexts.
 
-- ### Customer-Supplier 
+### Customer-Supplier 
 One-sided dependance as like in [[DDD (Domain Driven Design)#Upstream – Downstream|upstream - downstream]] team relationships.
 
-- ### Published Language 
-    
+### Published Language 
 
 Specification (publicly known), whoever implements it can work in coordination.
 
-- ### Separate Ways 
+### Separate Ways 
 2 bounded contexts that have nothing to do with one another as like in [[DDD (Domain Driven Design)#Free|free]] team relationships. 
 
-- ### Big Ball of Mud
-    
-
+### Big Ball of Mud
 Bounded context that we know is a mess (legacy project), we don’t really want to fix it.
+
 
 # Problem Space vs Solution Space 
 
@@ -233,24 +226,17 @@ Bounded context that we know is a mess (legacy project), we don’t really want 
 
 - This is where we design and build the actual software solution to address the problem identified in the problem space. It encompasses all the technical decisions, architectures, and implementations to create a system that solves the defined challenge. 
   
-
 # Sub-Domains vs Bounded Contexts
 
 As we break down our domain into smaller parts (sub-domains) and assign specific responsibilities to each part, we use bounded contexts to decide how we'll handle those responsibilities and concerns.
-
-  
 
 # Integration Events
 
 Any event that is interesting from a business point of view that crosses the boundary of a Bounded Context.
 
 - We talk about Domain Events when the eventual consistency happens within a boundary, otherwise (across Bounded Contexts) we refer to Integration Events.
-
 ## Use Cases
-
 - We propagate those integration events through Message Brokers.
 - There must be a resilient error handling logic in place (in case there are issues within bounded contexts and the requests cannot be finished properly).
-  
 ## Outbox pattern
-
 A table in our DB (within the respective Bounded Context) where we put messages at the same time we save changes (transactional consistency) and then in an asynchronous manner we read from there and publish the event(s).

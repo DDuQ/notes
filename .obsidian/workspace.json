@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Future job.md",
+                "file": "JD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Future job"
+              "title": "JD"
             }
           },
           {
@@ -96,21 +96,8 @@
               "icon": "lucide-file",
               "title": "Linq"
             }
-          },
-          {
-            "id": "67e19ee1be793203",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/EntityFramework.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "EntityFramework.excalidraw"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +130,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#TODO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -249,13 +236,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Entity Framework.md",
+                "file": "JD.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Entity Framework"
+              "title": "Outline of JD"
             }
           },
           {
@@ -288,45 +275,45 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8756e7096964db99",
+  "active": "248406f14d28c304",
   "lastOpenFiles": [
-    "Technical/Backend/ASP.NET/Linq.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
-    "Excalidraw/EntityFramework.excalidraw.md",
+    "JD.md",
     "Technical/Backend/ASP.NET/Dapper.md",
+    "Technical/Backend/ASP.NET/Controllers.md",
+    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
+    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
+    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
+    "Technical/Frontend/SignalR.md",
+    "Technical/Frontend/SEO.md",
+    "Technical/DevOps/Deployment/Kubernetes.md",
     "Technical/Backend/ORM.md",
-    "Future job.md",
+    "Technical/Essential Concepts/Design Patterns/Creational/Builder.md",
+    "Technical/Essential Concepts/Design Patterns/Behavioral/Strategy.md",
+    "Strategy.md",
+    "Excalidraw/Singleton.excalidraw.md",
+    "Excalidraw/Observer.excalidraw.md",
+    "Technical/Backend/ASP.NET/Linq.md",
+    "Technical/Backend/ASP.NET/Minimal controllers.md",
+    "Technical/Essential Concepts/Design Patterns/Structural/Structural (Index).md",
+    "Excalidraw/EntityFramework.excalidraw.md",
     "Technical/Essential Concepts/Design Patterns/Creational/Singleton.md",
     "Technical/Essential Concepts/Design Patterns/Creational/Factory.md",
-    "Technical/Essential Concepts/Design Patterns/Structural/Structural (Index).md",
     "Technical/Database",
     "Technical/Untitled.md",
-    "Excalidraw/Observer.excalidraw.md",
-    "Excalidraw/Singleton.excalidraw.md",
     "Technical/Essential Concepts/Design Patterns/Creational/Creational (Index).md",
     "Technical/Essential Concepts/Design Patterns/Behavioral/Mediator.md",
     "Technical/Essential Concepts/Design Patterns/Design Patterns (Index).md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Behavioral (Index).md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Memento.md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Observer.md",
-    "Technical/Essential Concepts/SOLID.md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Strategy.md",
     "files/REST-1.jpeg",
     "Technical/Essential Concepts/Design Patterns/Structural",
     "Technical/Essential Concepts/Design Patterns/Creational",
     "Technical/Essential Concepts/Design Patterns/Behavioral",
-    "Technical/Essential Concepts/REST.md",
-    "Technical/Essential Concepts/OOP.md",
     "Technical/Essential Concepts/Design Patterns",
     "Technical/Essential Concepts",
-    "Strategy.md",
     "Excalidraw",
     "Excalidraw libraries/UML-ER-library.excalidrawlib",
     "Excalidraw libraries/system-design.excalidrawlib",
     "Excalidraw libraries/drwnio.excalidrawlib",
-    "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
-    "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
-    "Technical/General essential concepts/Design Patterns/Design Patterns.md",
     "files/DDD (Domain Driven Design)-4.jpeg",
     "files/DDD (Domain Driven Design)-3.jpeg",
     "files/DDD (Domain Driven Design)-2.jpeg",
