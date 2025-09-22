@@ -1,6 +1,6 @@
 # Definition
 
-Set of principles that allows us to create software designs that are easier to understand, maintain and extend leading to high quality software that is robust and adaptable.
+**Set of principles** that allows us to create **software designs** that are ==easier to understand, maintain and extend== leading to high quality software that is robust and adaptable.
 # Single Responsibility
 
 A class should only have one reason to change; should have only one responsibility or purpose.
