@@ -1,4 +1,3 @@
-
 # Session / Local Storage
 
 Given that data gets wiped once a page is reload, there are a couple of options to give a sense of 'persistence' in our applications. Those options are:

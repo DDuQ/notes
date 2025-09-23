@@ -4,5 +4,7 @@
   "obsidian-regex-replace",
   "obsidian-git",
   "obsidian-excalidraw-plugin",
-  "obsidian-text-format"
+  "obsidian-text-format",
+  "symbols-prettifier",
+  "better-export-pdf"
 ]

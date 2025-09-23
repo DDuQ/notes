@@ -1,4 +1,3 @@
-
 # Lifecycle events
 
 There are a set of lifecycle methods that are part of the component base class. We can override them trigger at the right time.

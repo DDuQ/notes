@@ -8,93 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "248406f14d28c304",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JD"
-            }
-          },
-          {
-            "id": "1f5da0adb86ebbff",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Singleton.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Singleton.excalidraw"
-            }
-          },
-          {
-            "id": "1abc55ca83329f09",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Observer.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Observer.excalidraw"
-            }
-          },
-          {
-            "id": "49f20491749a204b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Observer.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Observer.excalidraw"
-            }
-          },
-          {
-            "id": "18180bbdc008f6a9",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Observer.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Observer.excalidraw"
-            }
-          },
-          {
-            "id": "4d4d067f723318e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Technical/Backend/ASP.NET/Entity Framework.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Entity Framework"
-            }
-          },
-          {
             "id": "173ca328c21b980b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Linq.md",
+                "file": "Technical/Testing/TDD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linq"
+              "title": "TDD"
             }
           }
         ]
@@ -130,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#TODO",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -236,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JD.md",
+                "file": "Technical/Testing/TDD.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JD"
+              "title": "Outline of TDD"
             }
           },
           {
@@ -256,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -275,45 +199,45 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "248406f14d28c304",
+  "active": "173ca328c21b980b",
   "lastOpenFiles": [
     "Technical/Backend/ASP.NET/Entity Framework.md",
-    "Technical/Backend/ASP.NET/Minimal controllers.md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Observer.md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Strategy.md",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Behavioral (Index).md",
-    "Technical/Backend/ASP.NET/Dapper.md",
-    "Technical/Architecture/Domain Driven Design/Factory.md",
     "Excalidraw/Observer.excalidraw.md",
     "Excalidraw/Singleton.excalidraw.md",
-    "Excalidraw/EntityFramework.excalidraw.md",
+    "Projects/Capybara-Pet-App/Ideas.md",
+    "Team/Documentation.md",
     "README.md",
     "Excalidraw/Drawing 2025-09-18 14.13.54.excalidraw.md",
-    "Topics to add.md",
-    "JD.md",
-    "Technical/Essential Concepts/SOLID.md",
-    "Flashcards",
-    "Technical/Backend/ASP.NET/Controllers.md",
-    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
-    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
-    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
-    "Technical/Frontend/SignalR.md",
-    "Technical/Frontend/SEO.md",
-    "Technical/DevOps/Deployment/Kubernetes.md",
-    "Technical/Backend/ORM.md",
-    "Technical/Essential Concepts/Design Patterns/Creational/Builder.md",
-    "Strategy.md",
+    "Excalidraw/TDD.excalidraw.md",
+    "Technical/Testing/TDD.md",
     "Technical/Backend/ASP.NET/Linq.md",
+    "Excalidraw/Untitled.md",
+    "Topics to add.md",
+    "Technical/Backend/C#/Delegates.md",
+    "Untitled.md",
+    "JD.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "Technical/Backend/C#/Untitled.md",
+    "Technical/Testing/Untitled.md",
+    "Technical/Testing/Untitled/Untitled.md",
+    "Technical/Testing/Untitled",
+    "Technical/Testing/dasda/dasda.md",
+    "Technical/Testing/dasda",
+    "Technical/Frontend/SEO.md",
+    "Technical/Frontend/Blazor/State Management.md",
+    "Technical/Frontend/Blazor/Rendering.md",
+    "Technical/Frontend/Blazor/Authentication.md",
+    "Technical/Backend/C#",
+    "Excalidraw/EntityFramework.excalidraw.md",
+    "Team",
+    "Technical/Testing",
+    "Flashcards",
     "Technical/Database",
     "files/REST-1.jpeg",
     "Technical/Essential Concepts/Design Patterns/Structural",
     "Technical/Essential Concepts/Design Patterns/Creational",
     "Technical/Essential Concepts/Design Patterns/Behavioral",
-    "Technical/Essential Concepts/Design Patterns",
-    "Technical/Essential Concepts",
-    "Excalidraw",
-    "Excalidraw libraries/UML-ER-library.excalidrawlib",
-    "Excalidraw libraries/system-design.excalidrawlib",
     "files/DDD (Domain Driven Design)-4.jpeg",
     "files/DDD (Domain Driven Design)-3.jpeg",
     "files/DDD (Domain Driven Design)-2.jpeg",
