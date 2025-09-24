@@ -20,7 +20,6 @@ static void ProcessNumbers(int[] numbers, NumberFilter filter)
 	}
 }
 ```
-
 # Types
 
 ## Func
@@ -29,14 +28,13 @@ Used for methods that return a value.
 >[!IMPORTANT]
 >The last type parameter is the type returned.
 >
->Also, this type should be favored as **Func<T, bool>** instead of [[Delegates#Predicate|predicates]].
+>Also, this type should be favored as **Func<T, bool>** instead of using [[Delegates#Predicate|predicates]].
 
 ```csharp
 Func<int, int, int> Add = (x, y) => x + y;
 
 Console.WriteLine(Add(2,5));
 ```
-
 ## Action
 Used for methods that don't return anything (void).
 
@@ -45,7 +43,6 @@ Action<string> LogSomething = (something) => Console.WriteLine(something);
 
 LogSomething("Something I wanna log.");
 ```
-
 ## Predicate
 Used for methods that return *bool*.
 

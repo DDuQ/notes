@@ -15,15 +15,15 @@ Write the minimum code necessary to make the test pass.
 Clean up the code while keeping tests green.
 
 >[!NOTE]
->In paper those are the essential factors for implementing TDD, but there is a missing key piece which allows us to keep in track for incoming tests for future functionalities.
+>In paper those are the essential factors for implementing TDD, but there is a missing key piece which allows us to keep in track for incoming tests for future functionalities or just enhancements on existing ones.
 >
 >That's when `List Tests` come into the picture.
 
 ![[Excalidraw/TDD.excalidraw.md#^frame=uhAP1ct73JJp_2V6UrVqN|600]]
 
 ## List Tests
-This is meant for the thinking phase; offload everything that comes to mind.
+This is meant for a **thinking phase**; offload everything that comes to mind.
 
-We're in the middle of writing code and ideas comes to mind to improve test cases or we notice there are edge cases that need to be covered, etc. 
+We're in the middle of writing code and ideas comes to mind to improve test cases or we notice there are edge cases that need to be covered. 
 
 In such cases to track those improvements it will clarify and provide guide on what to prioritize by writing those ideas (into a backlog for instance).

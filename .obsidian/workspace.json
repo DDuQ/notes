@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Testing/TDD.md",
+                "file": "Technical/Backend/C#/Delegates.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TDD"
+              "title": "Delegates"
             }
           }
         ]
@@ -160,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Testing/TDD.md",
+                "file": "Technical/Backend/C#/Delegates.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TDD"
+              "title": "Outline of Delegates"
             }
           },
           {
@@ -201,6 +201,7 @@
   },
   "active": "173ca328c21b980b",
   "lastOpenFiles": [
+    "Technical/Testing/TDD.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
     "Excalidraw/Observer.excalidraw.md",
     "Excalidraw/Singleton.excalidraw.md",
@@ -209,7 +210,6 @@
     "README.md",
     "Excalidraw/Drawing 2025-09-18 14.13.54.excalidraw.md",
     "Excalidraw/TDD.excalidraw.md",
-    "Technical/Testing/TDD.md",
     "Technical/Backend/ASP.NET/Linq.md",
     "Excalidraw/Untitled.md",
     "Topics to add.md",
