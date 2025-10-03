@@ -58,5 +58,14 @@
       ],
       "key": "F4"
     }
+  ],
+  "file-explorer:new-folder": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
   ]
 }
