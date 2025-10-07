@@ -4,25 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "fdc9a145253cead4",
+        "id": "629d953484ec1ffb",
         "type": "tabs",
         "children": [
           {
-            "id": "173ca328c21b980b",
+            "id": "61753cefea58d7d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Frontend/Blazor/Blazor Theory.md",
+                "file": "Technical/Frontend/Javascript/JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blazor Theory"
+              "title": "JavaScript"
             }
           },
           {
-            "id": "f7fa1cc321ffc4d0",
+            "id": "ec2dc817b359ea06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technical/Frontend/Javascript/JavaScript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JavaScript"
+            }
+          },
+          {
+            "id": "3f13325c855aaf3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "entityframe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -111,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337,
-    "collapsed": true
+    "width": 337
   },
   "right": {
     "id": "3472ef3a8d76dc59",
@@ -215,36 +228,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f7fa1cc321ffc4d0",
+  "active": "37fb7fabe9ee7c99",
   "lastOpenFiles": [
     "Technical/Frontend/React/Hooks.md",
-    "Technical/Frontend/Javascript/JavaScript.md",
-    "Technical/Frontend/Javascript",
-    "Technical/Frontend/Server Side Rendering.md",
-    "Technical/Frontend/Blazor/Built-in Components.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
-    "Technical/Frontend/Blazor/Rendering.md",
-    "Technical/Frontend/Blazor/Authentication.md",
-    "Technical/Frontend/React",
-    "Technical/Backend/C#/Delegates.md",
-    "Technical/Essential Concepts/OOP.md",
-    "Team/Plan de Trabajo.md",
-    "Technical/Testing/TDD.md",
+    "Technical/Frontend/Server Side Rendering.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
+    "Excalidraw/EntityFramework.excalidraw.md",
     "Excalidraw/Observer.excalidraw.md",
     "Excalidraw/Singleton.excalidraw.md",
-    "Projects/Capybara-Pet-App/Ideas.md",
-    "Team/Documentation.md",
-    "README.md",
+    "Technical/Backend/RabbitMQ.md",
+    "Technical/Backend/ASP.NET/Minimal controllers.md",
+    "Technical/Essential Concepts/OOP.md",
+    "Excalidraw/Drawing 2025-09-22 23.20.17.excalidraw.md",
     "Excalidraw/Drawing 2025-09-18 14.13.54.excalidraw.md",
-    "Excalidraw/TDD.excalidraw.md",
+    "Technical/Backend/ASP.NET/Controllers.md",
+    "Technical/Backend/ASP.NET/Dapper.md",
+    "Team/Plan de Trabajo.md",
+    "Team/Documentation.md",
+    "Technical/Backend/C#/Delegates.md",
     "Technical/Backend/ASP.NET/Linq.md",
-    "Excalidraw/Untitled.md",
-    "Topics to add.md",
-    "JD.md",
-    "Untitled 1.md",
-    "Untitled 2.md",
-    "Technical/Backend/C#/Untitled.md",
+    "Technical/Backend/ORM.md",
+    "Technical/Essential Concepts/Design Patterns/Design Patterns (Index).md",
+    "Technical/Essential Concepts/SOLID.md",
+    "Technical/Essential Concepts/REST.md",
+    "Technical/Testing/TDD.md",
+    "Technical/Frontend/Javascript/JavaScript.md",
+    "Technical/Frontend/Javascript",
+    "Technical/Frontend/Blazor/Built-in Components.md",
+    "Technical/Frontend/Blazor/Rendering.md",
+    "Technical/Frontend/React",
     "Technical/Testing/Untitled",
     "Technical/Testing/dasda",
     "Technical/Backend/C#",

@@ -99,14 +99,11 @@ In this way we can apply a transformation to an entire array.
 
 # Context manipulation methods
 
-
 ## Call
 
 ## Apply
 
 ## Bind
-
-
 
 # Promise
 
