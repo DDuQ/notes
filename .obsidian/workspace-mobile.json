@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
+                "file": "Link to continue recording Smart Data Housing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Behavioral"
+              "title": "Link to continue recording Smart Data Housing"
             }
           }
         ]
@@ -142,6 +142,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -152,8 +153,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "64ff8cbeaab5ab42",
+  "active": "8c85778d8915957a",
   "lastOpenFiles": [
+    "Technical/Essential Concepts/SOLID.md",
+    "Technical/Testing/TDD.md",
+    "Technical/Testing",
+    "Technical/Frontend/Server Side Rendering.md",
+    "Technical/Frontend/React/Hooks.md",
+    "Technical/Frontend/React",
+    "Technical/Frontend/Javascript/JavaScript.md",
+    "Technical/Frontend/Javascript",
+    "Technical/DevOps/CICD.md",
+    "Technical/Backend/C#/Delegates.md",
+    "Technical/Backend/C#",
+    "Link to continue recording Smart Data Housing.md",
+    "Excalidraw/TDD.excalidraw.md",
     "Technical/General essential concepts/Design Patterns/Behavioral/Memento.md",
     "Technical/General essential concepts/Design Patterns/Behavioral/Behavioral.md",
     "Technical/Architecture/Domain Driven Design/Key Concepts.md",
@@ -173,11 +187,6 @@
     "Technical/Backend/ASP.NET",
     "Technical/Architecture/Domain Driven Design/Value Object.md",
     "Technical/Architecture/Domain Driven Design/Repositories.md",
-    "Technical/Architecture/Domain Driven Design/Factory.md",
-    "Technical/Architecture/Domain Driven Design/Entity.md",
-    "Technical/Architecture/Domain Driven Design/Domain Services.md",
-    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
-    "Technical/Architecture/Domain Driven Design/Aggregates.md",
     "Technical/Architecture/Domain Driven Design",
     "Technical/Architecture",
     "files/image.jpeg",
