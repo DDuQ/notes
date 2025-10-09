@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Frontend/Javascript/JavaScript.md",
+                "file": "Link to continue recording Smart Data Housing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript"
+              "title": "Link to continue recording Smart Data Housing"
             }
           }
         ],
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Frontend/Javascript/JavaScript.md",
+                "file": "Link to continue recording Smart Data Housing.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JavaScript"
+              "title": "Outline of Link to continue recording Smart Data Housing"
             }
           },
           {
@@ -228,8 +228,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "37fb7fabe9ee7c99",
+  "active": "3f13325c855aaf3c",
   "lastOpenFiles": [
+    "Technical/Frontend/Javascript/JavaScript.md",
+    "Link to continue recording Smart Data Housing.md",
     "Technical/Frontend/React/Hooks.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
     "Technical/Frontend/Server Side Rendering.md",
@@ -253,10 +255,8 @@
     "Technical/Essential Concepts/SOLID.md",
     "Technical/Essential Concepts/REST.md",
     "Technical/Testing/TDD.md",
-    "Technical/Frontend/Javascript/JavaScript.md",
     "Technical/Frontend/Javascript",
     "Technical/Frontend/Blazor/Built-in Components.md",
-    "Technical/Frontend/Blazor/Rendering.md",
     "Technical/Frontend/React",
     "Technical/Testing/Untitled",
     "Technical/Testing/dasda",
