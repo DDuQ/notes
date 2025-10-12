@@ -41,12 +41,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Link to continue recording Smart Data Housing.md",
+                "file": "Technical/Database/SQL Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Link to continue recording Smart Data Housing"
+              "title": "SQL Server"
+            }
+          },
+          {
+            "id": "1b0499b2d8607bca",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/SQL Server.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "SQL Server.excalidraw"
             }
           }
         ],
@@ -189,13 +201,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Link to continue recording Smart Data Housing.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Link to continue recording Smart Data Housing"
+              "title": "Outline"
             }
           },
           {
@@ -228,10 +239,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3f13325c855aaf3c",
+  "active": "2d62be8ae5151d29",
   "lastOpenFiles": [
-    "Technical/Frontend/Javascript/JavaScript.md",
+    "Technical/Database/SQL Server.md",
+    "Excalidraw/SQL Server.excalidraw.md",
+    "Technical/Database/SQL.md",
     "Link to continue recording Smart Data Housing.md",
+    "Topics to add.md",
+    "README.md",
+    "Technical/Frontend/Javascript/JavaScript.md",
     "Technical/Frontend/React/Hooks.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
     "Technical/Frontend/Server Side Rendering.md",
@@ -251,12 +267,7 @@
     "Technical/Backend/C#/Delegates.md",
     "Technical/Backend/ASP.NET/Linq.md",
     "Technical/Backend/ORM.md",
-    "Technical/Essential Concepts/Design Patterns/Design Patterns (Index).md",
-    "Technical/Essential Concepts/SOLID.md",
-    "Technical/Essential Concepts/REST.md",
-    "Technical/Testing/TDD.md",
     "Technical/Frontend/Javascript",
-    "Technical/Frontend/Blazor/Built-in Components.md",
     "Technical/Frontend/React",
     "Technical/Testing/Untitled",
     "Technical/Testing/dasda",
