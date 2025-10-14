@@ -158,5 +158,6 @@
   "anuppuccin-theme-settings@@anp-border-radius": 16,
   "anuppuccin-theme-settings@@anp-border-padding": 20,
   "anuppuccin-theme-settings@@anp-editor-font-lp": "\"New York Small\"",
-  "anuppuccin-theme-settings@@ctp-custom-overlay2@@light": "#000000"
+  "anuppuccin-theme-settings@@ctp-custom-overlay2@@light": "#000000",
+  "anuppuccin-theme-settings@@anp-table-thickness": 1
 }

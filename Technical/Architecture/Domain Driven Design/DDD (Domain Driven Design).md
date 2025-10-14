@@ -91,7 +91,7 @@ Processing is broken down into smaller chunks and the entire state of the proces
 - Private fields and properties by default.
 - Expose only when needed.
 - Expose only what’s needed.
-- Notice “Primitive Obsession” (consider extracting Value Objects → Location).
+- Notice “Primitive Obsession” (consider extracting Value Objects --> Location).
 - Notice use of Domain Models in Application Services.
 
 # Always valid vs Not always valid [[Domain Modeling|domain models]]
@@ -105,7 +105,7 @@ No matter when, the data is always in a valid state, their properties are always
 Approach where we allow the domain object to be in an invalid domain state (validation errors).
 
 >[!NOTE]
-Prefer Always Valid Domain Model → We can’t access a property that is in an invalid state. We could use Factory pattern or static factory method for validation purposes. 
+Prefer Always Valid Domain Model --> We can’t access a property that is in an invalid state. We could use Factory pattern or static factory method for validation purposes. 
 
 ## How to always maintain our domain valid?
 
