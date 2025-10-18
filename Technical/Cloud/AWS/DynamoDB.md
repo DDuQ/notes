@@ -157,8 +157,20 @@ Tries to address the same problem of access patterns (scan in general *BAD* / qu
 >- [[DynamoDB#Read Capacity Unit|RCUs]] are shared with the base table, so this works like a ternary sort key.
 
 
- 
+# Streams
+
+This allows to capture and record [[DynamoDB#Item|item-level]] changes (inserts, updates and deletes) in real time, allowing to ==**view** and react to data modifications as they occur in the [[DynamoDB#Table|tables]]==.
+
+There are view types for different scenarios:
+
+*Key attributes only* -> Only [[DynamoDB#Primary key|key attributes]] of the item changed.
+
+*New image* -> New version of a item after changed. 
+
+*Old image* -> Old version of a item before changed.
+
+*New and old images* -> Captures the before and after of the item changed.
 
 
-
+# Auto-scaling
 

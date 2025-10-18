@@ -22,5 +22,8 @@ https://app.hirevire.com/begin/cc4aab89-46c3-4b28-afbc-6c1d2ab22efa?lang=EN
 - How to handle cold starts.
 - Why are those valuable. --> Those are cheap (1M executions per month free) and scalable (given that can be decoupled from main services and to work on their own).
 
-## DynamoDB
-- 
+
+# Ideas
+
+- To provide interesting places surrounding the houses, apartments, lands, etc. (Undirect value)
+

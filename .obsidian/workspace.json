@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Cloud/AWS/DynamoDB.md",
+                "file": "Smart Data Housing process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DynamoDB"
+              "title": "Smart Data Housing process"
             }
           },
           {
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Cloud/AWS/DynamoDB.md",
+                "file": "Smart Data Housing process.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DynamoDB"
+              "title": "Outline of Smart Data Housing process"
             }
           },
           {
@@ -213,11 +213,13 @@
   },
   "active": "3f13325c855aaf3c",
   "lastOpenFiles": [
+    "Technical/Cloud/AWS/Lambda.md",
+    "Technical/Cloud/Serverless.md",
+    "Technical/Cloud/AWS/DynamoDB.md",
     "Excalidraw/DynamoDB.excalidraw.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
     "Technical/Backend/ASP.NET/Dapper.md",
     "Technical/Essential Concepts/OOP.md",
-    "Technical/Cloud/AWS/DynamoDB.md",
     "Excalidraw/SQL Server.excalidraw.md",
     "Smart Data Housing process.md",
     "Technical/Cloud/AWS",
@@ -243,8 +245,6 @@
     "Technical/Frontend/Blazor/Blazor Theory.md",
     "Technical/Frontend/Server Side Rendering.md",
     "Excalidraw/EntityFramework.excalidraw.md",
-    "Excalidraw/Observer.excalidraw.md",
-    "Excalidraw/Singleton.excalidraw.md",
     "Technical/Frontend/Javascript",
     "Technical/Frontend/React",
     "Technical/Testing/Untitled",
