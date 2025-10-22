@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Smart Data Housing process.md",
+                "file": "Technical/Cloud/AWS/DynamoDB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Smart Data Housing process"
+              "title": "DynamoDB"
             }
           },
           {
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Smart Data Housing process.md",
+                "file": "Technical/Cloud/AWS/DynamoDB.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Smart Data Housing process"
+              "title": "Outline of DynamoDB"
             }
           },
           {
@@ -211,8 +211,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3f13325c855aaf3c",
+  "active": "e5694daadf55ff22",
   "lastOpenFiles": [
+    "Checklists/Processes",
+    "Checklists",
+    "Checklists/Processes/Smart Data Housing process.md",
     "Technical/Cloud/AWS/Lambda.md",
     "Technical/Cloud/Serverless.md",
     "Technical/Cloud/AWS/DynamoDB.md",
@@ -221,7 +224,6 @@
     "Technical/Backend/ASP.NET/Dapper.md",
     "Technical/Essential Concepts/OOP.md",
     "Excalidraw/SQL Server.excalidraw.md",
-    "Smart Data Housing process.md",
     "Technical/Cloud/AWS",
     "Technical/Untitled",
     "README.md",
@@ -244,14 +246,12 @@
     "Technical/Frontend/React/Hooks.md",
     "Technical/Frontend/Blazor/Blazor Theory.md",
     "Technical/Frontend/Server Side Rendering.md",
-    "Excalidraw/EntityFramework.excalidraw.md",
     "Technical/Frontend/Javascript",
     "Technical/Frontend/React",
     "Technical/Testing/Untitled",
     "Technical/Testing/dasda",
     "Technical/Backend/C#",
     "Team",
-    "Technical/Testing",
     "files/REST-1.jpeg",
     "files/DDD (Domain Driven Design)-4.jpeg",
     "files/DDD (Domain Driven Design)-3.jpeg",
