@@ -9,10 +9,10 @@ Open-source message broker that has a reliable message delivery and support for 
 ![[RabbitMQ-2.jpeg|545x208]]
 
 >[!NOTE]
-In practice [[RabbitMQ]] never publishes directly to a [[RabbitMQ#Queue|queue]], it does it through an [[RabbitMQ#Exchange|exchange]].
+In practice [[RabbitMQ]] never publishes directly to a [[Queue|queue]], it does it through an [[RabbitMQ#Exchange|exchange]].
 # Exchange
 
-Core component which routes messages to [[RabbitMQ#Queue|queues]] based on certain rules, called [[RabbitMQ#Bindings|bindings]].
+Core component which routes messages to [[Queue|queues]] based on certain rules, called [[RabbitMQ#Bindings|bindings]].
 
 There are different types of exchanges that achieve specific use-cases:
 ## Direct
@@ -30,19 +30,9 @@ There are different types of exchanges that achieve specific use-cases:
 ## Headers
 - Routes messages based on message **headers** instead of routing keys.
 - Useful when routing logic depends on multiple attributes.
-
-# Queue
-
-This is a data structure which (in the context of message brokers) stores messages until they are delivered to and processed by a consumer.
-
-It follows the philosophy of FIFO; *First In First Out*.
-
->[!NOTE]
-Consumers never directly listen messages from exchanges, they do it through queues. 
-
 # Bindings
 
-Is the link between a [[RabbitMQ#Exchange|exchange]] and a [[RabbitMQ#Queue|queue]], without it exchanges would not be able to identify which messages should go in any queue.
+Is the link between a [[RabbitMQ#Exchange|exchange]] and a [[Queue|queue]], without it exchanges would not be able to identify which messages should go in any queue.
 ## Binding key
 When creating bindings, usually we would specify a **key**, this gets compared against message's [[RabbitMQ#Routing key|routing key]] to decide if a queue gets the message or not (except in [[RabbitMQ#Fanout|fanout exchanges]]).
 
