@@ -17,3 +17,27 @@ Thankfully after stopping SQL Server (MSSQLSERVER) the error just vanished.
 >[!NOTE]
 >Ensure to set **Start Mode** as Manual -- Just to make sure we don't incur into the same issue again when working with containers.
 
+# Port issues
+
+## Local environment vs Container
+
+When working with containers it makes sense to have one `appsettings.json` just for the container, so that it can resolve routes based on docker (automatic DNS resolution).
+
+This will avoid finding out where our local env is pointing and having those configs properly set.
+
+For example: 
+`Appsettings.json(local env)`
+```json
+"SQLServerDbSettings": {  
+  "ConnectionString": "Data Source=localhost,1433;Initial Catalog=CapybaraPetApp;User Id=sa;Password=Admin123.;TrustServerCertificate=True;Encrypt=False;MultipleActiveResultSets=True;"  
+}
+```
+
+`Appsettings.json(Development) - set for Docker`
+```json
+"SQLServerDbSettings": {  
+  "ConnectionString": "Data Source=database;Initial Catalog=CapybaraPetApp;User Id=sa;Password=Admin123.;TrustServerCertificate=True;MultipleActiveResultSets=True;"  
+}
+```
+
+Here '**database**' will be resolved by Docker internally -- pointing to the correct database port.
