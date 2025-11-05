@@ -10,10 +10,9 @@
   "file-explorer:open": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Alt"
       ],
-      "key": "L"
+      "key": "1"
     }
   ],
   "outline:open": [
@@ -66,6 +65,15 @@
         "Shift"
       ],
       "key": "Q"
+    }
+  ],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
     }
   ]
 }
