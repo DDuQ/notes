@@ -105,7 +105,33 @@ In this way we can apply a transformation to an entire array.
 
 ## Bind
 
+# # Callback
+A callback is a function passed as an argument and executed at a later time — _“call after”_.
+
+Example:
+```js
+function doSomething(cb) {
+  setTimeout(() => {
+    cb("Done!");
+  }, 1000);
+}
+```
+
 # Promise
+A Promise wraps asynchronous work and provides two callbacks:
+
+- **resolve** → called when the operation succeeds
+- **reject** → called when it fails
+
+Handlers:
+
+```js
+promise   
+.then(result => { /* handles resolve */ })   
+.catch(error => { /* handles reject */ });
+```
+
+Promises chain sequentially, unlike callbacks, which tend to nest deeply (callback hell).
 
 # Event Loop
 

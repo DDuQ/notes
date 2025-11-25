@@ -11,11 +11,11 @@ Objects are created from classes and can have properties (to hold state) and met
 ## Encapsulation
 
 Involves bundling properties and methods into a class.
-Helps hiding internal logic of an object, by exposing only necessary methods.
+Helps hiding internal logic of an object, by restricting access to internal methods and data.
 
 ## Abstraction
 
-Helps reducing complexity by hiding unnecessary details.
+Helps simplifying complexity by exposing only relevant behavior.
 
 ## Inheritance
 

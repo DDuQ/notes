@@ -1,3 +1,7 @@
+# Azure Service Models
+
+![[Azure Services-1.png]]
+
 # Azure Container Apps
 
 ![[Deploying .NET apps to Azure-1.jpeg|299x387]]

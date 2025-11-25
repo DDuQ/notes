@@ -92,17 +92,31 @@ Those filters can leverage wildcards to be more efficient:
 
 ## Null values
 
-As well as in [[SQL#Missing values|missing values]], by design ==there **will** be null values at some point== due to human error, unknown data or simply information not available yet.
+As well as in [[SQL#Missing values|missing values]], by design ==there **WILL** be null values at some point== due to human error, unknown data or simply information not available yet.
 
-It is important to know how to deal with it so that we can provide realistic insights around them.
-
-|Operator|Description|Example|
-|---|---|---|
-|**`IS NULL`**|Returns records where the field **has no value** (`NULL`).|`WHERE Email IS NULL` → finds rows with no email address.|
-|**`IS NOT NULL`**|Returns records where the field **has a value** (not `NULL`).|`WHERE Email IS NOT NULL` → finds rows with an existing email.
+| Operator          | Description                                                   | Example                                                        |
+| ----------------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
+| **`IS NULL`**     | Returns records where the field **has no value** (`NULL`).    | `WHERE Email IS NULL` → finds rows with no email address.      |
+| **`IS NOT NULL`** | Returns records where the field **has a value** (not `NULL`). | `WHERE Email IS NOT NULL` → finds rows with an existing email. |
 
 >[!NOTE]
->`NULL` values are [[SQL#Missing values|missing values]].
+>It is important to know how to deal with **NULLs** so that we can provide accurate data analysis around them.
+>
+>Also, take in mind that `NULL` values are [[SQL#Missing values|missing values]].
 
+# Summarizing data
 
+## Aggregate functions
+
+| **Category**           | **Aggregate Function** | **Description**                                                                                                                                                                 |
+| ---------------------- | :--------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Non-numerical data** |         `MIN`          | Returns the smallest (or earliest) value in a set.                                                                                                                              |
+|                        |         `MAX`          | Returns the largest (or latest) value in a set.                                                                                                                                 |
+|                        |        `COUNT`         | Returns the number of rows (or non-null values).                                                                                                                                |
+| **Numerical data**     |         `AVG`          | Returns the average (mean) value of a numeric column.                                                                                                                           |
+|                        |         `SUM`          | Returns the total sum of a numeric column.                                                                                                                                      |
+|                        |    <br><br>`ROUND`     | Rounds a numeric value to a specified number of decimal places.  <br>Example: <br>`ROUND(price, 2)` → rounds to 2 decimals.  <br>`ROUND(price, -1)` → rounds to the nearest 10. |
+
+>[!IMPORTANT]
+>Those aggregates can be mixed with [[SQL#WHERE|WHERE]] statements, so that it can apply said functions to specific subsets of data.
 

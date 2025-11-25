@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3f13325c855aaf3c",
+            "id": "4f4be5083822b395",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Database/SQL.md",
+                "file": "Technical/Cloud/Azure/Best practices and tips (Azure).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL"
+              "title": "Best practices and tips (Azure)"
             }
           }
         ]
@@ -160,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Database/SQL.md",
+                "file": "Technical/Cloud/Azure/Best practices and tips (Azure).md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL"
+              "title": "Outline of Best practices and tips (Azure)"
             }
           },
           {
@@ -201,37 +201,41 @@
   },
   "active": "8756e7096964db99",
   "lastOpenFiles": [
-    "Technical/Database/SQL Server/SQL Server.md",
-    "Technical/Database/SQL.md",
-    "Technical/Database/B-Tree.md",
-    "Technical/Database/Bitmap Index.md",
-    "Technical/Database/SQL Server/Known issues and how to solve them.md",
-    "Untitled.md",
-    "[SQL.md",
-    "Technical/Cloud/AWS/Lambda.md",
-    "Technical/Cloud/AWS/DynamoDB.md",
-    "Technical/Cloud/AWS/SQS.md",
+    "Technical/Cloud/Azure/Azure Services.md",
+    "Technical/Cloud/Azure/Best practices and tips (Azure).md",
+    "Technical/Cloud/Azure/Storage Account/Blob storage.md",
+    "Technical/Cloud/Azure/Storage Account/Table Storage.md",
+    "Technical/Cloud/Azure/App Service.md",
     "Technical/Cloud/Queue.md",
-    "files/Known issues and how to solve them-1.png",
-    "Technical/Backend/RabbitMQ.md",
-    "Excalidraw/SQL Server.excalidraw.md",
+    "Technical/Cloud/AWS/DynamoDB.md",
+    "Technical/Essential Concepts/SOLID.md",
+    "Technical/Cloud/Azure/Storage Account",
+    "files/Best practices and tips (Azure)-2.png",
+    "files/Best practices and tips (Azure)-1.png",
+    "Technical/Essential Concepts/REST.md",
+    "Technical/Cloud/AWS/SQS.md",
+    "Technical/Cloud/AWS/Lambda.md",
+    "files/Azure Services-1.png",
+    "Technical/Frontend/Bundlers.md",
+    "Technical/Frontend/NPM.md",
+    "Technical/Frontend/DOM.md",
+    "Technical/Frontend/React/React.md",
+    "Technical/Frontend/React/Hooks.md",
+    "Technical/Frontend/Javascript/JavaScript.md",
+    "Technical/Frontend/WebAssembly.md",
+    "Technical/Frontend/SignalR.md",
+    "Technical/Frontend/Server Side Rendering.md",
+    "Technical/Frontend/SEO.md",
+    "Technical/Backend/ASP.NET/Entity Framework.md",
     "Technical/Backend/ASP.NET/Dapper.md",
-    "limbo/Styles config.md",
-    "Projects/Capybara-Pet-App/Ideas.md",
+    "Technical/Testing/TDD.md",
+    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
+    "Technical/Backend/ASP.NET/Minimal controllers.md",
+    "files/Known issues and how to solve them-1.png",
     "Checklists/Processes",
     "Checklists",
-    "Checklists/Processes/Smart Data Housing process.md",
-    "Technical/Cloud/Serverless.md",
-    "Excalidraw/DynamoDB.excalidraw.md",
-    "Technical/Backend/ASP.NET/Entity Framework.md",
-    "Technical/Essential Concepts/OOP.md",
     "Technical/Cloud/AWS",
     "Technical/Untitled",
-    "README.md",
-    "Topics to add.md",
-    "Technical/Testing/TDD.md",
-    "Technical/Database/SQL Server/SQL Queries Optimization.md",
-    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
     "files/Bitmap Index-1.png",
     "files/B-Tree-1.png",
     "files/Optimize SQL Queries-1.png",
@@ -240,12 +244,8 @@
     "Technical/Frontend/React",
     "Technical/Testing/Untitled",
     "Technical/Testing/dasda",
-    "Technical/Backend/C#",
     "files/REST-1.jpeg",
     "files/DDD (Domain Driven Design)-4.jpeg",
-    "files/DDD (Domain Driven Design)-3.jpeg",
-    "files/DDD (Domain Driven Design)-2.jpeg",
-    "files/image.jpeg",
-    "files/DDD (Domain Driven Design)-1.jpeg"
+    "files/DDD (Domain Driven Design)-3.jpeg"
   ]
 }
