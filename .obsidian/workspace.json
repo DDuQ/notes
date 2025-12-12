@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Garbage collector.md",
+                "file": "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Garbage collector"
+              "title": "Deploying .NET apps to Azure"
+            }
+          },
+          {
+            "id": "6cf3fbe122fe81cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Technical/DevOps/Deployment/Terraform.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Terraform"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:Terra",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +104,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "885704ad861dc3a0",
@@ -175,13 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Cloud/Azure/Best practices and tips (Azure).md",
+                "file": "Technical/DevOps/Deployment/Terraform.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Best practices and tips (Azure)"
+              "title": "Outline of Terraform"
             }
           },
           {
@@ -214,11 +229,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "917ec07a676ab690",
+  "active": "8756e7096964db99",
   "lastOpenFiles": [
+    "Technical/Cloud/Azure/Azure Functions.md",
+    "Flashcards/Promps for creating Flashcards with Google AI.md",
+    "Technical/Database/SQL.md",
+    "Technical/Database/Bitmap Index.md",
+    "Technical/Database/B-Tree.md",
+    "Technical/Database/SQL Server/Known issues and how to solve them.md",
+    "Technical/Database/SQL Server/SQL Server.md",
+    "Technical/DevOps/Deployment/Terraform.md",
+    "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
+    "Technical/Backend/ASP.NET/Garbage collector.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
     "Technical/Backend/ORM.md",
-    "Technical/Backend/ASP.NET/Garbage collector.md",
     "Technical/Cloud/Azure/Storage Account/Blob storage.md",
     "Technical/Cloud/Azure/Storage Account/Queue Storage.md",
     "Technical/Cloud/Azure/App Service.md",
@@ -232,16 +256,7 @@
     "Technical/Essential Concepts/Design Patterns/Design Patterns (Index).md",
     "Technical/Cloud/Azure/Storage Account/Table Storage.md",
     "Technical/Backend/ASP.NET/Linq.md",
-    "Flashcards/Promps for creating Flashcards with Google AI.md",
     "Technical/Backend/ASP.NET/Dapper.md",
-    "Technical/Backend/ASP.NET/Controllers.md",
-    "Technical/Backend/C#/Delegates.md",
-    "Excalidraw/TDD.excalidraw.md",
-    "Excalidraw/SQL Server.excalidraw.md",
-    "Excalidraw/Singleton.excalidraw.md",
-    "Excalidraw/Observer.excalidraw.md",
-    "Excalidraw/EntityFramework.excalidraw.md",
-    "Excalidraw/Drawing 2025-11-25 17.47.16.excalidraw.md",
     "Technical/Cloud/Azure/Storage Account",
     "files/Best practices and tips (Azure)-2.png",
     "files/Best practices and tips (Azure)-1.png",

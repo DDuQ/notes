@@ -13,8 +13,18 @@ It has a structure for us to follow and have resources created.
 ## Automation
 We can connect with different CI/CD infrastructure in order to automate the creation of resources automatically.
 ## Consistency
-While we rely on ourselves to setup resources directly (containers, web api, databases, container registry, etc.) on Azure portal UI it is a better approach to use code to do so. 
+Although we can manually configure resources such as containers, web APIs, databases, and registries through a cloud provider’s UI, a more reliable approach is to define and deploy these resources using code.
 
-This reduces the possible errors to constantly creating resources since we guarantee to have the exact same configuration on different environments.
-## Multi-cloud Management
+This reduces potential errors when creating resources since we guarantee to have the exact same configuration on different environments.
+## Multi-cloud Management (Cloud agnostic)
 Allows to connect to different cloud providers.
+
+# State file
+
+This is a crucial component that stores information about the managed infrastructure and configuration. It is used by terraform to map resources to our configuration, track metadata, and improve performance for large infrastructures.
+
+By default it is stored in `terraform.tfstate` as a local file but *it is advised to store it in a cloud provider*.
+
+>[!IMPORTANT] TL;DR
+>State file works as the **source of truth** which ==allows terraform to effectively being able to compare updates, creations or deletions of resources== by comparing actual infrastructure against desired state. 
+
