@@ -39,14 +39,14 @@
             "id": "6cf3fbe122fe81cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Technical/DevOps/Deployment/Terraform.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Technical/Essential Concepts/OOP.md",
+                "bFile": "Technical/Essential Concepts/OOP.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Terraform"
+              "icon": "diff",
+              "title": "Diff: OOP"
             }
           }
         ],
@@ -83,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Terra",
+                "query": "file:pro",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,16 +229,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8756e7096964db99",
+  "active": "6cf3fbe122fe81cb",
   "lastOpenFiles": [
-    "Technical/Cloud/Azure/Azure Functions.md",
     "Flashcards/Promps for creating Flashcards with Google AI.md",
+    "Technical/Essential Concepts/OOP.md",
+    "Technical/DevOps/Deployment/Terraform.md",
+    "Excalidraw/Drawing 2025-11-25 17.47.16.excalidraw.md",
+    "Technical/Cloud/Azure/Azure Functions.md",
     "Technical/Database/SQL.md",
     "Technical/Database/Bitmap Index.md",
     "Technical/Database/B-Tree.md",
     "Technical/Database/SQL Server/Known issues and how to solve them.md",
     "Technical/Database/SQL Server/SQL Server.md",
-    "Technical/DevOps/Deployment/Terraform.md",
     "Technical/DevOps/Deployment/Deploying .NET apps to Azure.md",
     "Technical/Backend/ASP.NET/Garbage collector.md",
     "Technical/Backend/ASP.NET/Entity Framework.md",
@@ -249,14 +251,12 @@
     "Technical/Cloud/Azure/Azure Services.md",
     "Technical/Cloud/Azure/Azure SQL.md",
     "Technical/Cloud/Azure/Best practices and tips (Azure).md",
-    "Technical/Essential Concepts/OOP.md",
     "Technical/Essential Concepts/REST.md",
     "Technical/Essential Concepts/Design Patterns/Creational/Builder.md",
     "Technical/Essential Concepts/Design Patterns/Creational/Factory.md",
     "Technical/Essential Concepts/Design Patterns/Design Patterns (Index).md",
     "Technical/Cloud/Azure/Storage Account/Table Storage.md",
     "Technical/Backend/ASP.NET/Linq.md",
-    "Technical/Backend/ASP.NET/Dapper.md",
     "Technical/Cloud/Azure/Storage Account",
     "files/Best practices and tips (Azure)-2.png",
     "files/Best practices and tips (Azure)-1.png",
