@@ -71,10 +71,9 @@ Composition is often described in terms of **"has-a"** relationship.
 	{
 		vehicle.Start();
 	}
-	```
+```
 
 - To promote code reuse by inheriting properties and behaviors from existing classes.
-
 
 # Fragile Base Class Problem
 
