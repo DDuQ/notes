@@ -2,7 +2,7 @@
 
 OOP stands for Object-Oriented Programming. 
 
-It’s a **paradigm** where we represent *real-world objects* or *abstract entities*. 
+It’s a **paradigm** where we represent *real-world objects*. 
 
 Objects are created from classes and can have properties (to hold state) and methods (to define behavior).
 

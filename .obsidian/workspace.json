@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Migration/Strangler Fig.md",
+                "file": "Synchronization Context.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Strangler Fig"
+              "title": "Synchronization Context"
             }
           }
         ],
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technical/Migration/Strangler Fig.md",
+                "file": "Synchronization Context.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Strangler Fig"
+              "title": "Outline of Synchronization Context"
             }
           },
           {
@@ -242,36 +242,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8756e7096964db99",
+  "active": "b32034f33a22f561",
   "lastOpenFiles": [
-    "Technical/Migration/How to handle Migrations.md",
+    "Habits tracker.md",
+    "Synchronization Context.md",
+    "Technical/Backend/ASP.NET/Asynchronous programming/Async-Await Best Practices.md",
+    "Technical/Backend/ASP.NET/Asynchronous programming",
+    "Deadlock.md",
+    "YARP.md",
+    "Technical/Essential Concepts/Reverse proxy.md",
     "Technical/Migration/Strangler Fig.md",
-    "Reverse proxy.md",
+    "Technical/Migration/How to handle Migrations.md",
+    "Technical/Essential Concepts/REST.md",
+    "Technical/Essential Concepts/OOP.md",
+    "Technical/Backend/C#/Delegates.md",
+    "Technical/Backend/ASP.NET/Garbage collector.md",
+    "Technical/Backend/ASP.NET/Minimal APIs.md",
+    "Technical/Backend/ASP.NET/Entity Framework.md",
+    "Technical/Backend/ASP.NET/Controllers.md",
+    "Technical/Backend/ASP.NET/Dapper.md",
     "Technical/Architecture/Domain Driven Design/Key Concepts.md",
     "Excalidraw/Reverse proxy.excalidraw.md",
-    "YARP.md",
     "Chat.md",
     "Untitled",
     "Excalidraw/EntityFramework.excalidraw.md",
     "Excalidraw/Singleton.excalidraw.md",
     "Excalidraw/Observer.excalidraw.md",
     "Excalidraw/DynamoDB.excalidraw.md",
-    "Technical/Backend/ASP.NET/Controllers.md",
-    "Technical/Backend/ASP.NET/Async-Await Best Practices.md",
     "Excalidraw/TDD.excalidraw.md",
     "Excalidraw/Strangler Fig.excalidraw.md",
-    "Excalidraw/SQL Server.excalidraw.md",
-    "Technical/Frontend/Blazor/Authentication.md",
-    "Technical/Frontend/Blazor/Blazor Syntax.md",
-    "Technical/Frontend/Blazor/Blazor Theory.md",
-    "Technical/Frontend/Blazor/Rendering.md",
-    "Technical/Backend/ASP.NET/Entity Framework.md",
-    "Excalidraw/Drawing 2025-11-25 17.47.16.excalidraw.md",
-    "Technical/Essential Concepts/OOP.md",
     "Technical/Migration",
-    "Technical/Essential Concepts/Design Patterns/Behavioral/Behavioral (Index).md",
-    "Technical/Database/SQL.md",
-    "Technical/Backend/ASP.NET/Garbage collector.md",
     "files/strangler_fig.png",
     "files/strangler_fig (1).png",
     "Habits",
@@ -288,7 +288,6 @@
     "files/Optimize SQL Queries-1.png",
     "Technical/Database/SQL Server",
     "Technical/Frontend/Javascript",
-    "Technical/Frontend/React",
     "files/REST-1.jpeg"
   ]
 }
