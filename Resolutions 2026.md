@@ -2,7 +2,7 @@
 
 There are a couple of things I wish I've done differently last year, like to prepare before the time I was let go from the company or the decaying of habits such as going to the gym as I felt unworthy due to being unemployed.
 
-Beliefs are a huge part of how I've been behaving from the time when I starting to have those thoughts of hatred against me, to never have a time for validating myself by celebrating any kind of achievements. That's the biggest regret I have.
+Beliefs are a huge part of how I've been behaving from the time when I started having those thoughts of hatred against me, to never have a time for validating myself by celebrating any kind of achievements. That's the biggest regret I have.
 
 Now that I think of it, it IS the root for every bad decision or ingrained habit I've picked since my younghood.
 

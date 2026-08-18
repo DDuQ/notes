@@ -12,7 +12,7 @@
 
 # Phases of migration
 
-![[Excalidraw/Strangler Fig.excalidraw.md#^clippedframe=TCAEZita|600]]
+![[Excalidraw/Strangler Fig.excalidraw.md#^clippedframe=TCAEZita|800]]
 ## Preparation:
 - Review dependencies.
 - Choose a target .NET
