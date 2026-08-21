@@ -2,6 +2,14 @@
 
 This is a runtime component in charge of **identifying** and **freeing** memory from unused managed resources -- It helps to prevent memory leaks by doing this.
 
+# Personal definition
+
+Garbage collector is a background process which runs alongside our .NET applications, this process ensures the **sweet spot** for memory usage required for the current processes being run.
+
+GC would try to deallocate as much as possible those resources that are not longer being used for the current scope. 
+
+>[!important]
+>Re-gaining those spaces of memory depends on the traceability of references or values in the current scope.
 ## Key concepts
 
 - **Root**: This refers to variables on the stack.

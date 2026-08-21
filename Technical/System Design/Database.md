@@ -21,3 +21,15 @@ While a replica may hurt a primary database momentarily this greatly benefits wh
 
 >[!IMPORTANT]
 >Diagrams should discriminate the paths for each database so we can easily distinguish primary from replicas.
+
+
+# SQL vs NoSQL
+
+When deciding which store to use, a question should be made:
+
+- What do I care for? **data consistency** (SQL) or **fast retrieval of data** at all times for millions of rows with heavy payloads (NoSQL).
+
+This would be an initial argument to decide which storage to commit. Still, there could be scenarios in which both could be usable for the same service each filling their own pain point:
+
+- SQL: Transactional inserts and consistency always.
+- NoSQL: Low latency for retrieving heavy loads of data (like blobs for instance).
