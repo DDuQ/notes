@@ -11,31 +11,40 @@
             "id": "1384615d86097d2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Memory Management/Heap.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Strangler Fig.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Heap"
+              "icon": "excalidraw-icon",
+              "title": "Strangler Fig.excalidraw"
+            }
+          },
+          {
+            "id": "a49a56b39dceb88a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Mental Map - Garbage Collector.excalidraw"
             }
           },
           {
             "id": "0072f21e53113d7d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Memory Management/Stack.md",
-                "mode": "source",
-                "source": false
+                "file": "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Stack"
+              "icon": "excalidraw-icon",
+              "title": "Mental Map - Garbage Collector.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -229,9 +238,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1384615d86097d2b",
+  "active": "0072f21e53113d7d",
   "lastOpenFiles": [
+    "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md",
+    "Excalidraw/Observer.excalidraw.md",
+    "Checklists/January 21 Checklist.md",
     "Technical/Backend/ASP.NET/Memory Management/Stack.md",
+    "Excalidraw/Drawing 2026-08-21 21.57.03.excalidraw.md",
+    "Excalidraw/Untitled",
+    "Excalidraw/Strangler Fig.excalidraw.md",
     "Technical/Backend/ASP.NET/Memory Management/Heap.md",
     "Technical/Backend/ASP.NET/Memory Management/Garbage collector.md",
     "Technical/Backend/ASP.NET/Memory Management",
@@ -253,11 +268,6 @@
     "Resolutions 2026.md",
     "README.md",
     "LLM Fundamentals.md",
-    "Deadlock.md",
-    "Habits tracker.md",
-    "Technical/Migration/How to handle Migrations.md",
-    "Technical/System Design/CDN.md",
-    "Technical/Essential Concepts/OOP.md",
     "Technical/System Design",
     "Technical/Backend/ASP.NET/Asynchronous programming",
     "Untitled",
@@ -272,7 +282,6 @@
     "files/Known issues and how to solve them-1.png",
     "Checklists/Processes",
     "Checklists",
-    "Technical/Cloud/AWS",
     "files/Bitmap Index-1.png",
     "files/B-Tree-1.png",
     "files/Optimize SQL Queries-1.png",

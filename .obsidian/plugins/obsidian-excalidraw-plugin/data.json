@@ -115,6 +115,77 @@
     "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.19.0",
     "libraryItems": [
       {
+        "id": "kKUV20PYYsPdEUiylV_ys",
+        "status": "unpublished",
+        "elements": [
+          {
+            "type": "rectangle",
+            "version": 1501,
+            "versionNonce": 736346876,
+            "isDeleted": false,
+            "id": "Tubzj80M1lUAFa9Vzuf_3",
+            "fillStyle": "solid",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "angle": 0,
+            "x": -261.7511509753239,
+            "y": 504.2368443712088,
+            "strokeColor": "#000000",
+            "backgroundColor": "#eeeeee",
+            "width": 544.0716431445243,
+            "height": 464.1043045832213,
+            "seed": 1652176196,
+            "groupIds": [
+              "5hwCnbDuJkyMdiceFJjVD",
+              "Y-KH5Ma3osOobNLuHDhkb"
+            ],
+            "index": "b09l",
+            "frameId": null,
+            "roundness": null,
+            "boundElements": [],
+            "updated": 1787621737633,
+            "link": null,
+            "locked": false,
+            "hasTextLink": false
+          },
+          {
+            "type": "rectangle",
+            "version": 1619,
+            "versionNonce": 1959002948,
+            "isDeleted": false,
+            "id": "S4-Z4ExC7X7Rka_21OKOE",
+            "fillStyle": "solid",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "angle": 0,
+            "x": -260.30077556982343,
+            "y": 504.297276679771,
+            "strokeColor": "#000000",
+            "backgroundColor": "#eeeeee",
+            "width": 143.7680312263061,
+            "height": 36.727018428988295,
+            "seed": 1199159108,
+            "groupIds": [
+              "qD8S4nSXQI8yG6Ylevqyz",
+              "Y-KH5Ma3osOobNLuHDhkb"
+            ],
+            "index": "b0A",
+            "frameId": null,
+            "roundness": null,
+            "boundElements": [],
+            "updated": 1787621737632,
+            "link": null,
+            "locked": false,
+            "hasTextLink": false
+          }
+        ],
+        "created": 1787621739561
+      },
+      {
         "id": "mH0V11XG6OMpS-RFpj4rJ",
         "status": "unpublished",
         "elements": [
