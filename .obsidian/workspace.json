@@ -8,43 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1384615d86097d2b",
+            "id": "0668b54e6a134e1a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Strangler Fig.excalidraw.md"
+                "file": "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Polyfills.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Strangler Fig.excalidraw"
+              "icon": "lucide-file",
+              "title": "Polyfills"
             }
           },
           {
-            "id": "a49a56b39dceb88a",
+            "id": "900f45682cefae55",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md"
+                "file": "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Value Types.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Mental Map - Garbage Collector.excalidraw"
-            }
-          },
-          {
-            "id": "0072f21e53113d7d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Mental Map - Garbage Collector.excalidraw"
+              "icon": "lucide-file",
+              "title": "Value Types"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DDD",
+                "query": "Heap",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -238,53 +230,52 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0072f21e53113d7d",
+  "active": "900f45682cefae55",
   "lastOpenFiles": [
+    "Technical/Backend/ASP.NET/Memory Management/Heap.md",
+    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Reference Types.md",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Polyfills.md",
+    "Technical/Backend/ASP.NET/Memory Management/Stack.md",
+    "files/Reference Types-1.png",
+    "Resolutions 2026.md",
+    "Projects/Capy-desktop-pet/Initial idea concept.excalidraw.md",
+    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Value Types.md",
+    "Technical/DevOps/Deployment/Docker.md",
     "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md",
-    "Technical/Backend/ASP.NET/Memory Management/Allocation Free.md",
-    "Technical/Backend/ASP.NET/Memory Management/Performance Profiler.md",
     "Technical/Backend/ASP.NET/Memory Management/Garbage collector.md",
+    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/TFM.md",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Directory.Build.Props.md",
+    "files/Directory.Build.Props-1.png",
+    "Technical/Backend/ASP.NET/Key Concepts/Assembly.md",
+    "Excalidraw/Strangler Fig.excalidraw.md",
+    "Technical/Backend/ASP.NET/Linq.md",
+    "Technical/Backend/ASP.NET/Key Concepts",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack",
+    "Technical/Backend/C#/Mastery Course",
+    "Projects/Capy-desktop-pet/Ideas.md",
+    "Projects/Capy-desktop-pet",
+    "Technical/Backend/ASP.NET/Memory Management/Performance Profiler.md",
+    "Technical/Backend/ASP.NET/Memory Management/Allocation Free.md",
+    "YARP.md",
+    "Topics to add.md",
     "files/Pasted Image 20260825194919_187.png",
     "Excalidraw/Observer.excalidraw.md",
     "Checklists/January 21 Checklist.md",
-    "Technical/Backend/ASP.NET/Memory Management/Stack.md",
     "Excalidraw/Drawing 2026-08-21 21.57.03.excalidraw.md",
     "Excalidraw/Untitled",
-    "Excalidraw/Strangler Fig.excalidraw.md",
-    "Technical/Backend/ASP.NET/Memory Management/Heap.md",
     "Technical/Backend/ASP.NET/Memory Management",
     "Technical/System Design/Database.md",
-    "Technical/DevOps/Deployment/Docker.md",
     "Technical/System Design/Cache.md",
-    "AI - Prompts - Skills - SDD POC.md",
-    "Technical/Architecture/Domain Driven Design/Entity.md",
-    "Technical/Architecture/Domain Driven Design/Entity.md",
-    "Technical/Architecture/Domain Driven Design/Value Object.md",
-    "Technical/Architecture/Domain Driven Design/Value Object.md",
-    "Technical/Architecture/Domain Driven Design/Domain Modeling.md",
-    "Technical/Architecture/Domain Driven Design/Domain Driven Design Index.md",
-    "Technical/Architecture/Domain Driven Design/DDD (Domain Driven Design).md",
-    "Technical/Architecture/Domain Driven Design/Aggregates.md",
-    "Technical/Architecture/Domain Driven Design/Aggregates.md",
-    "Technical/System Design/API Gateway.md",
-    "Technical/Essential Concepts/REST.md",
-    "Resolutions 2026.md",
     "Technical/System Design",
     "Technical/Backend/ASP.NET/Asynchronous programming",
     "Untitled",
-    "Technical/Migration",
     "files/strangler_fig.png",
     "files/strangler_fig (1).png",
-    "Habits",
-    "Technical/Cloud/Azure/Storage Account",
     "files/Best practices and tips (Azure)-2.png",
     "files/Best practices and tips (Azure)-1.png",
     "files/Azure Services-1.png",
     "files/Known issues and how to solve them-1.png",
-    "Checklists/Processes",
-    "Checklists",
-    "files/Bitmap Index-1.png",
-    "files/B-Tree-1.png",
-    "files/Optimize SQL Queries-1.png"
+    "files/Bitmap Index-1.png"
   ]
 }
