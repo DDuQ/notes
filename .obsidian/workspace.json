@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Value Types.md",
+                "file": "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Parameter passing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Value Types"
+              "title": "Parameter passing"
             }
           }
         ],
@@ -232,20 +232,24 @@
   },
   "active": "900f45682cefae55",
   "lastOpenFiles": [
-    "Technical/Backend/ASP.NET/Memory Management/Heap.md",
+    "files/Passing Parameters-1.png",
+    "Technical/Backend/ASP.NET/Key Concepts/Access Patterns.md",
+    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Parameter passing.md",
     "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Reference Types.md",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/TFM.md",
     "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Polyfills.md",
+    "Technical/Backend/ASP.NET/Memory Management/Heap.md",
     "Technical/Backend/ASP.NET/Memory Management/Stack.md",
+    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Value Types.md",
+    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Directory.Build.Props.md",
+    "Technical/Backend/ORM.md",
     "files/Reference Types-1.png",
     "Resolutions 2026.md",
     "Projects/Capy-desktop-pet/Initial idea concept.excalidraw.md",
-    "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types/Value Types.md",
     "Technical/DevOps/Deployment/Docker.md",
     "Technical/Backend/ASP.NET/Memory Management/Mental Map - Garbage Collector.excalidraw.md",
     "Technical/Backend/ASP.NET/Memory Management/Garbage collector.md",
     "Technical/Backend/C#/Mastery Course/Value Types VS Reference Types",
-    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/TFM.md",
-    "Technical/Backend/C#/Mastery Course/Modern Csharp Stack/Directory.Build.Props.md",
     "files/Directory.Build.Props-1.png",
     "Technical/Backend/ASP.NET/Key Concepts/Assembly.md",
     "Excalidraw/Strangler Fig.excalidraw.md",
@@ -262,11 +266,8 @@
     "files/Pasted Image 20260825194919_187.png",
     "Excalidraw/Observer.excalidraw.md",
     "Checklists/January 21 Checklist.md",
-    "Excalidraw/Drawing 2026-08-21 21.57.03.excalidraw.md",
     "Excalidraw/Untitled",
     "Technical/Backend/ASP.NET/Memory Management",
-    "Technical/System Design/Database.md",
-    "Technical/System Design/Cache.md",
     "Technical/System Design",
     "Technical/Backend/ASP.NET/Asynchronous programming",
     "Untitled",

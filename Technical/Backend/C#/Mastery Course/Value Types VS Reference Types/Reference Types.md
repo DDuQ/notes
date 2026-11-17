@@ -9,6 +9,7 @@
 >Not all reference types are stored in the heap. There are exceptions in which a ref type inside a method passes the escape analysis and is marked as stack allocated by the JIT compiler.
 >
 >Sources: 
+>- [Microsoft Docs: Escape Analysis](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/runtime#escape-analysis:~:text=Console.WriteLine(str)%3B%0A%20%20%20%20%7D%0A%7D-,Escape%20analysis,-Escape%20analysis%20determines)
 >- [.NET Performance improvements: Object Stack Allocation](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-10/#deabstraction:~:text=Object%20Stack%20Allocation)
 >- [Microsoft Docs: Stack allocation](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/runtime#stack-allocation)
 

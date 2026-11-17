@@ -1,4 +1,4 @@
-This stands for Target Framework Moniker, and it defines the platform to which the code compiles against. 
+Stands for **Target Framework Moniker**, and it defines the platform to which the code compiles against. 
 - Defines which reference [[Assembly|assemblies]] are used.
 - Defines the runtime used.
 - Defines the APIs available.

@@ -1,6 +1,4 @@
-# Definition
-
-Is a piece of memory storage used by the [[Garbage collector|garbage collector]], which can hold [[Value Types|value types]] (e.g. int, double, long, bool, etc.). It's size it's limited, opposite to the [[Heap|heap]].
+Memory storage used by the [[Garbage collector|garbage collector]], which can hold [[Value Types|value types]] (e.g. int, double, long, bool, etc.). It's size is limited, opposite to the [[Heap|heap]].
 
 Also, stack allocates only those values that are already defined in the sized they will take from memory. Like the following:
 
